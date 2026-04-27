@@ -1,7 +1,9 @@
 name: Node Updater
+env:
+  TZ: Asia/Pyongyang
 on:
   schedule:
-    - cron: '*/30 * * * *' 
+    - cron: '0 * * * *' 
   workflow_dispatch: # Чтобы ты мог нажать кнопку "Run"
 
 jobs:
@@ -15,15 +17,16 @@ jobs:
       - name: Update File
         run: |
           # Пишем время и маты в файл
-          echo "Обновлено: $(date -u -d "+3 hours" +'%Y-%m-%d %H:%M:%S') - ебаная сука" > status.txt
+          echo "Обновлено: $(date) - ебаная сука" > status.txt
           # Сюда же добавим запуск твоего парсера, когда он будет готов
-          # python parser.py 
+          python getnfuckit.py
 
       - name: Git Push
         run: |
           git config --global user.name "Github Action Bot"
           git config --global user.email "actions@github.com"
-          git add status.txt
+          git add status.txt sub64.txt log.txt
+
           # Коммитим только если файл реально изменился
-          git diff-index --quiet HEAD || git commit --amend -m "Hourly auto-update [skip ci]"
+          git diff-index --quiet HEAD || git commit -m "Hourly auto-update [skip ci]"
           git push
