@@ -1,11 +1,11 @@
 name: Node Updater
 env:
   TZ: Asia/Pyongyang
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 on:
   schedule:
     - cron: '*/15 * * * *'
   workflow_dispatch: # Чтобы ты мог нажать кнопку "Run"
-
 jobs:
   build:
     runs-on: ubuntu-latest
