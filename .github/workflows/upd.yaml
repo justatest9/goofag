@@ -1,7 +1,7 @@
 name: Node Updater
 on:
   schedule:
-    - cron: '*/30 * * * *' # Раз в час, сука
+    - cron: '*/30 * * * *' 
   workflow_dispatch: # Чтобы ты мог нажать кнопку "Run"
 
 jobs:
@@ -10,7 +10,7 @@ jobs:
     permissions:
       contents: write # Без этой херни коммиты не полетят!
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Update File
         run: |
