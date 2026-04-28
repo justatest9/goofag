@@ -3,8 +3,8 @@ env:
   TZ: Asia/Pyongyang
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 on:
-  schedule:
-    - cron: '*/15 * * * *'
+#  schedule:
+#    - cron: '*/15 * * * *'
   workflow_dispatch: # Чтобы ты мог нажать кнопку "Run"
 jobs:
   build:
@@ -32,8 +32,10 @@ jobs:
             git commit --amend -m "$CMESSAGE"
             git push --force
           else
+            git branch shit @
             # Коммитим только если файл реально изменился
             git diff-index --quiet HEAD || git commit -m "$CMESSAGE"
-            git push
+            git push origin 
+            git push -f origin shit
           fi
 
