@@ -26,7 +26,14 @@ jobs:
           git config --global user.name "Github Action Bot"
           git config --global user.email "actions@github.com"
           git add status.txt sub64.txt log.txt
+          LAST_AUTHOR=$(git log -1 --format='%an')
+          CMESSAGE="Periodically auto-update [skip ci]"
+          if [ "$LAST_AUTHOR" == "Github Action Bot" ]; then
+            git commit --amend -m "$CMESSAGE"
+            git push --force
+          else
+            # Коммитим только если файл реально изменился
+            git diff-index --quiet HEAD || git commit -m "$CMESSAGE"
+            git push
+          fi
 
-          # Коммитим только если файл реально изменился
-          git diff-index --quiet HEAD || git commit -m "Hourly auto-update [skip ci]"
-          git push
