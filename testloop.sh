@@ -16,6 +16,7 @@ echo $TEST_URL $UUID
 grep reality BLACK_VLESS_RUS_base64_dec.txt >BLACK_VLESS.txt
 while read -r line; do
   python parset.py $line >$UUID_CONF
+  echo $line
   cat $UUID_CONF
   ID=$(echo $line | cut -d'#' -f2)
   sing-box run -c $UUID_CONF &
@@ -28,3 +29,5 @@ while read -r line; do
   pkill sing-box
   echo NEXT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 done <BLACK_VLESS.txt
+
+cat tested.log | sort -k1 -nr | grep -v United.*States | head -n 5 | cut -d' ' -f2 | cut -d'#' -f1 | awk '{print $0"#Top_"NR }' | base64  >topvless64.txt

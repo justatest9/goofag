@@ -3,6 +3,7 @@
 # this bitch parses a vless url line (argv[1]) to config.json for sing-box (stdout)
 # check out $? return status for 0 if ok
 
+from ast import Or
 import yarl
 import sys
 import json
@@ -35,10 +36,12 @@ def main():
 
     vless_outbound['tls'] = tls
     
-    if 'fp' in u.query.keys():
+    if 'fp' in u.query.keys() or sec == 'reality':
         tls['utls'] = utls
         utls['enabled'] = True
-        utls['fingerprint'] = u.query['fp']
+        utls['fingerprint'] = ''
+
+    subs(utls, 'fingerprint', u.query, 'fp')
         
     if sec == 'reality': 
         tls['reality'] = reality
