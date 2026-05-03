@@ -37,7 +37,7 @@ jobs:
 
           git config --global user.name "Github Action Bot"
           git config --global user.email "actions@github.com"
-          git add tested.log topvless64.txt
+          git add tested.log topvless64.txt topvless.txt
           LAST_AUTHOR=$(git log -1 --format='%an')
           CMESSAGE="Periodically auto-update _vless [skip ci]"
           if [ "$LAST_AUTHOR" == "Github Action Bot" ]; then
