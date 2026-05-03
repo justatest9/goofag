@@ -42,12 +42,12 @@ jobs:
           CMESSAGE="Periodically auto-update _vless [skip ci]"
           if [ "$LAST_AUTHOR" == "Github Action Bot" ]; then
             git commit --amend -m "$CMESSAGE"
-            git push --force
+            git push --force-with-lease
           else
             git branch shit @
             # Коммитим только если файл реально изменился
             git diff-index --quiet HEAD || git commit -m "$CMESSAGE"
-            git push origin 
-            git push -f origin shit
+            git push --force-with-lease origin 
+            git push --force-with-lease origin shit
           fi
 

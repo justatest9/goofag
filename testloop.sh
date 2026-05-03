@@ -13,7 +13,7 @@ rm -f tested.log
 curl -L -O https://github.com/igareck/vpn-configs-for-russia/raw/refs/heads/main/Base64/BLACK_VLESS_RUS_base64.txt
 base64 -d BLACK_VLESS_RUS_base64.txt >BLACK_VLESS_RUS_base64_dec.txt
 echo $TEST_URL $UUID
-grep reality BLACK_VLESS_RUS_base64_dec.txt | head -n 5  >BLACK_VLESS.txt
+grep reality BLACK_VLESS_RUS_base64_dec.txt > BLACK_VLESS.txt
 while read -r line; do
   python parset.py $line >$UUID_CONF
   echo $line
@@ -30,4 +30,5 @@ while read -r line; do
   echo NEXT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 done <BLACK_VLESS.txt
 
-cat tested.log | sort -k1 -nr | grep -v United.*States | head -n 5 | cut -d' ' -f2 | cut -d'#' -f1 | awk '{print $0"#Top_"NR }' | base64  >topvless64.txt
+cat tested.log | sort -k1 -nr | grep -v United.*States | head -n 5 | cut -d' ' -f2 | cut -d'#' -f1 | awk '{print $0"#Top_"NR }' > topvless.txt
+cat topvless.txt | base64  > topvless64.txt
