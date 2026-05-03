@@ -30,7 +30,11 @@ jobs:
 
       - name: Git Push
         run: |
-          git pull
+          git fetch
+          git checkout origin/main
+          git reset --soft main
+          git switch -C main
+
           git config --global user.name "Github Action Bot"
           git config --global user.email "actions@github.com"
           git add tested.log topvless64.txt

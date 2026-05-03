@@ -3,7 +3,6 @@
 # this bitch parses a vless url line (argv[1]) to config.json for sing-box (stdout)
 # check out $? return status for 0 if ok
 
-from ast import Or
 import yarl
 import sys
 import json
