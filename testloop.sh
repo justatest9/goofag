@@ -30,5 +30,10 @@ while read -r line; do
   echo NEXT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 done <BLACK_VLESS.txt
 
-cat tested.log | sort -k1 -nr | grep -v United.*States | head -n 5 | cut -d' ' -f2 | cut -d'#' -f1 | awk '{print $0"#Top_"NR }' > topvless.txt
+## this is fixed naming top1..top5
+# cat tested.log | sort -k1 -nr | grep -v United.*States | head -n 5 | cut -d' ' -f2 | cut -d'#' -f1 | awk '{print $0"#Top_"NR }' > topvless.txt
+
+## instead using names from list
+cat tested.log | sort -k1 -nr | grep -v United.*States | head -n 5 | cut -d' ' -f2  > topvless.txt
+
 cat topvless.txt | base64  > topvless64.txt
