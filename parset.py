@@ -15,7 +15,9 @@ def main():
     argc = len(sys.argv)
     argv = sys.argv
     u = yarl.URL(argv[1])
-
+    lport = 1085 
+    if argc>2: 
+        lport = int(argv[2])
     # making singbox vless outbound array
     vless_outbound = {}
     vless_outbound['type'] = 'vless'
@@ -56,7 +58,7 @@ def main():
     local_inbound['type'] = 'socks'
     local_inbound['tag'] = 'in'
     local_inbound['listen'] = '127.0.0.1'
-    local_inbound['listen_port'] = 1085
+    local_inbound['listen_port'] = lport
 
     config = {}
     config['outbounds'] = [vless_outbound]
