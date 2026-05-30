@@ -21,7 +21,7 @@ cfg ='''
         "tag": "tun-in",
         "address": "172.19.0.1/30",
         "stack": "gvisor",
-        "exlude_package": ["io.nekohasekai.sfa"]
+        "exclude_package": ["io.nekohasekai.sfa"]
     }
     ],
     "outbounds": [
