@@ -1,29 +1,5 @@
 {
-  "dns": {
-    "servers": [
-      {
-        "tag": "local-dns",
-        "type": "https",
-        "server": "1.1.1.1"
-      }
-    ]
-  },
-  "inbounds": [
-    {
-      "type": "tun",
-      "tag": "tun-in",
-      "address": "172.19.0.1/30",
-      "stack": "gvisor",
-      "exlude_package": [
-        "io.nekohasekai.sfa"
-      ]
-    }
-  ],
   "outbounds": [
-    {
-      "type": "direct",
-      "tag": "direct"
-    },
     {
       "type": "urltest",
       "tag": "autosel",
@@ -1145,14 +1121,5 @@
       },
       "connect_timeout": "3s"
     }
-  ],
-  "route": {
-    "final": "autosel",
-    "rules": [
-      {
-        "protocol": "dns",
-        "outbound": "direct"
-      }
-    ]
-  }
+  ]
 }
