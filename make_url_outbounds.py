@@ -88,8 +88,8 @@ def main():
     urltest_o['outbounds'] = [i['tag'] for i in outbounds]
 
     urltest_o['url'] = 'https://cp.cloudflare.com'
-    urltest_o['interval'] = '5m'
-    urltest_o['tolerance'] = 500
+    urltest_o['interval'] = '1m'
+    urltest_o['tolerance'] = 100
     urltest_o['idle_timeout'] = '30m'
     urltest_o['interrupt_exist_connections'] = False
     outbounds = [urltest_o] + outbounds
