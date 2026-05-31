@@ -1,0 +1,888 @@
+{
+  "dns": {
+    "servers": [
+      {
+        "tag": "local-dns",
+        "type": "https",
+        "server": "1.1.1.1"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "address": "172.19.0.1/30",
+      "stack": "gvisor",
+      "auto_route": true,
+      "exclude_package": [
+        "io.nekohasekai.sfa"
+      ]
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "urltest",
+      "tag": "autosel",
+      "outbounds": [
+        "\ud83c\udde8\ud83c\udde6 Canada, Toronto | [BL] #0",
+        "\ud83c\uddeb\ud83c\uddee Finland, Helsinki | \ud83c\udf10 | [BL] #1",
+        "\ud83c\uddeb\ud83c\uddf7 France, Strasbourg | [BL] #2",
+        "\ud83c\udde9\ud83c\uddea Germany, Frankfurt am Main | [BL] #3",
+        "\ud83c\udde9\ud83c\uddea Germany, Frankfurt am Main (Innenstadt I) | \ud83c\udf10 | [BL] #4",
+        "\ud83c\uddee\ud83c\uddea Ireland, Dublin | [BL] #5",
+        "\ud83c\uddee\ud83c\uddf9 Italy, Milan | [BL] #6",
+        "\ud83c\uddf5\ud83c\uddf1 Poland, Warsaw | \ud83c\udf10 | [BL] #7",
+        "\ud83c\uddf0\ud83c\uddf7 South Korea, Incheon | [BL] #8",
+        "\ud83c\uddf8\ud83c\uddea Sweden, Stockholm | [BL] #9",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #10",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #11",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #12",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #13",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #14",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #15",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #16",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | \ud83c\udf10 | [BL] #17",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam (Westpoort) | \ud83c\udf10 | [BL] #18",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Doetinchem | [BL] #19",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Doetinchem | [BL] #20",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Doetinchem | [BL] #21",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Doetinchem | [BL] #22",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Doetinchem | [BL] #23",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Doetinchem | [BL] #24",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Oude Meer | [BL] #25",
+        "\ud83c\uddf9\ud83c\uddf7 Turkey | \ud83c\udf10 | [BL] #26",
+        "\ud83c\uddf9\ud83c\uddf7 Turkey, Istanbul | [BL] #27",
+        "\ud83c\uddf7\ud83c\uddfa Russia, Bugry | [BL] #28",
+        "\ud83c\uddf7\ud83c\uddfa Russia, Bugry | [BL] #29",
+        "\ud83c\udf10 Anycast-IP | \ud83c\udde9\ud83c\uddea \ud83c\uddeb\ud83c\uddf7 | [BL] #30",
+        "\ud83c\udf10 Anycast-IP | \ud83c\udde9\ud83c\uddea \ud83c\uddeb\ud83c\uddf7 | [BL] #31",
+        "\ud83c\udf10 Anycast-IP | \ud83c\udde9\ud83c\uddea \ud83c\uddf3\ud83c\uddf1 | [BL] #32",
+        "\ud83c\udf10 Anycast-IP | \ud83c\uddeb\ud83c\uddee \ud83c\uddec\ud83c\udde7 | [BL] #33",
+        "\ud83c\udf10 Anycast-IP | \ud83c\uddec\ud83c\udde7 \ud83c\uddf1\ud83c\uddfb | [BL] #34",
+        "\ud83c\udf10 Anycast-IP | \ud83c\uddec\ud83c\udde7 \ud83c\uddf1\ud83c\uddfb | [BL] #35",
+        "\ud83c\udf10 Anycast-IP | \ud83c\uddec\ud83c\udde7 \ud83c\uddf1\ud83c\uddfb | [BL] #36"
+      ],
+      "url": "https://cp.cloudflare.com",
+      "interval": "5m",
+      "tolerance": 500,
+      "idle_timeout": "30m",
+      "interrupt_exist_connections": false
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\udde8\ud83c\udde6 Canada, Toronto | [BL] #0",
+      "server": "45.92.219.190",
+      "server_port": 29207,
+      "uuid": "3d589110-aecd-4db2-8756-3c84e8108b7c",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3qJHTsdiOIDoQJZfGWMBfU6LIdk5m_7NP71SWcF3kBw",
+          "short_id": "73c42c"
+        },
+        "enabled": true,
+        "server_name": "aws.amazon.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddeb\ud83c\uddee Finland, Helsinki | \ud83c\udf10 | [BL] #1",
+      "server": "fi.roblugo.su",
+      "server_port": 443,
+      "uuid": "c980c5c7-1170-4a65-98c2-90d95f17ab80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "su3dq3BDLDkX-jIjq3GyVUXwqzD7CNVYzKtOcO4HQ24",
+          "short_id": "bbfb4f7a53e22dd3"
+        },
+        "enabled": true,
+        "server_name": "fi.roblugo.su"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddeb\ud83c\uddf7 France, Strasbourg | [BL] #2",
+      "server": "down.spectrum.vu",
+      "server_port": 443,
+      "uuid": "76713d07-5a6b-49c2-abd8-bc450a2fa7fc",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ckd_LwbbFo8BYf9vT84B20P6EL1n6vl2yMxoXc6X4SA",
+          "short_id": "f2a6d1c1e4b8"
+        },
+        "enabled": true,
+        "server_name": "down.spectrum.vu"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\udde9\ud83c\uddea Germany, Frankfurt am Main | [BL] #3",
+      "server": "84.200.80.90",
+      "server_port": 443,
+      "uuid": "4aa54dd9-b671-408f-b046-8be599930202",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LL-UZjihSR6Rpa5K83lp71jbRGXN7aI8LHIEdszAFCE",
+          "short_id": "78"
+        },
+        "enabled": true,
+        "server_name": "www.bing.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\udde9\ud83c\uddea Germany, Frankfurt am Main (Innenstadt I) | \ud83c\udf10 | [BL] #4",
+      "server": "95.85.234.126",
+      "server_port": 443,
+      "uuid": "69a2af58-d74a-44ca-864a-e09b493f4274",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1kAsEwUWwatnjpeQ2qUwHSccFucFOKzXVICm9tC0eWA",
+          "short_id": "25425ff6fa"
+        },
+        "enabled": true,
+        "server_name": "www.google.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddee\ud83c\uddea Ireland, Dublin | [BL] #5",
+      "server": "89.127.222.104",
+      "server_port": 443,
+      "uuid": "329f5c49-c8a1-46e0-8e4d-79b0bebdc59e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8SMUvtqSS3vVlrQgr1G_bu9ese9m-Ze4cWvpRFoC3AM",
+          "short_id": "d3a09fd1"
+        },
+        "enabled": true,
+        "server_name": "dl.google.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddee\ud83c\uddf9 Italy, Milan | [BL] #6",
+      "server": "213.218.212.4",
+      "server_port": 443,
+      "uuid": "301d514e-4aa0-47b0-ba44-a0cb891cd52f",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OZVjfQBboTDTBw0baMFqzVPsVUI4FNQmspTEb0b0zW4",
+          "short_id": "a1b2c3d4"
+        },
+        "enabled": true,
+        "server_name": "www.samsung.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf5\ud83c\uddf1 Poland, Warsaw | \ud83c\udf10 | [BL] #7",
+      "server": "mzone.pl.3cloudhost.com",
+      "server_port": 443,
+      "uuid": "f3368578-8389-458d-9aee-08dc350c5230",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8"
+        },
+        "enabled": true,
+        "server_name": "mzone.pl.3cloudhost.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf0\ud83c\uddf7 South Korea, Incheon | [BL] #8",
+      "server": "15.165.161.107",
+      "server_port": 8686,
+      "uuid": "1a17b19d-4896-4531-af79-6e91d8ef8228",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw",
+          "short_id": "628b3c90c98ead4f"
+        },
+        "enabled": true,
+        "server_name": "www.apple.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf8\ud83c\uddea Sweden, Stockholm | [BL] #9",
+      "server": "185.177.239.95",
+      "server_port": 14793,
+      "uuid": "74efe911-4e11-44ac-b9a8-c8b4caf42ea7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LL5elMmIL4PZMio6uuBGuZoToOURQdGqnaL8-aIyFAw",
+          "short_id": "26adc84e61c1"
+        },
+        "enabled": true,
+        "server_name": "www.sony.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #10",
+      "server": "pl-1.omuvpn.tech",
+      "server_port": 42346,
+      "uuid": "6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0xOy6LYcvRIbgXBDMSV0ZiuJPi_hf2e7FV4icmsQYQY",
+          "short_id": "8b5017a8"
+        },
+        "enabled": true,
+        "server_name": "www.tradingview.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #11",
+      "server": "45.149.234.236",
+      "server_port": 443,
+      "uuid": "9f7a44b8-617c-46de-bbe0-152e52570d69",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BagDycRtQvlxTnortyehYkwB6e-SJwboi2STJLKKAX8",
+          "short_id": "99a9b78d171c04cb"
+        },
+        "enabled": true,
+        "server_name": "linksys.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #12",
+      "server": "185.31.200.224",
+      "server_port": 5980,
+      "uuid": "b01c7e1f-a82e-4610-95b8-6a6edf8d6381",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cwqkZmmI9pDPzKCCcqNxw3G68FFv4tkXFhSozmYfrgU",
+          "short_id": "beefcafe"
+        },
+        "enabled": true,
+        "server_name": "surfvpn24.ru"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #13",
+      "server": "144.124.228.113",
+      "server_port": 443,
+      "uuid": "ea484535-0170-4ec8-bb3c-a9dbaa7412d7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "odHeTqoDcoPA6jeZStmaFPqoFg0ZiWwOKREEB0X-ez4",
+          "short_id": "e069bfaf9ba2069c"
+        },
+        "enabled": true,
+        "server_name": "nl3.panel11.ru"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #14",
+      "server": "146.103.121.166",
+      "server_port": 443,
+      "uuid": "ea484535-0170-4ec8-bb3c-a9dbaa7412d7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "N1HRDSdKHqdbSX_N5SUfFiokXcN-jQzu-Na244bA21I",
+          "short_id": "c64556c616970b14"
+        },
+        "enabled": true,
+        "server_name": "nl2.panel11.ru"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #15",
+      "server": "89.124.82.95",
+      "server_port": 443,
+      "uuid": "ea484535-0170-4ec8-bb3c-a9dbaa7412d7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "n4TFeuXAigmWJ9sXqnyicRkw3vcXy27ARfvhhsA61kI",
+          "short_id": "0bd0285f0c4f8f05"
+        },
+        "enabled": true,
+        "server_name": "nl4.panel11.ru"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #16",
+      "server": "v843042.hosted-by-vdsina.com",
+      "server_port": 443,
+      "uuid": "ea484535-0170-4ec8-bb3c-a9dbaa7412d7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wlYNxgezkkjoIEXATEBsOo7rZu5qkQaCOqDrysvuGR4",
+          "short_id": "46e746366ed5c1b9"
+        },
+        "enabled": true,
+        "server_name": "v843042.hosted-by-vdsina.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | \ud83c\udf10 | [BL] #17",
+      "server": "104.245.243.3",
+      "server_port": 443,
+      "uuid": "37a47219-f12e-416a-a3fc-cc27603ffc25",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0xVsi6JYS-gJFUILwuePsB32jvWtxRT_okJSmcWEQEc"
+        },
+        "enabled": true,
+        "server_name": "res.cdn.office.net"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam (Westpoort) | \ud83c\udf10 | [BL] #18",
+      "server": "45.67.136.184",
+      "server_port": 7443,
+      "uuid": "54a54ea0-4409-4030-ad9b-44c45849c05a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI",
+          "short_id": "be0ce047"
+        },
+        "enabled": true,
+        "server_name": "stackoverflow.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Doetinchem | [BL] #19",
+      "server": "89.105.208.116",
+      "server_port": 443,
+      "uuid": "279828c6-13f2-439c-9a4e-ea7d4f470fa4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
+          "short_id": "6d6f13013d3e1d0c"
+        },
+        "enabled": true,
+        "server_name": "g10.steptofsvo.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Doetinchem | [BL] #20",
+      "server": "89.105.208.117",
+      "server_port": 443,
+      "uuid": "279828c6-13f2-439c-9a4e-ea7d4f470fa4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
+          "short_id": "6d6f13013d3e1d0c"
+        },
+        "enabled": true,
+        "server_name": "g10.steptofsvo.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Doetinchem | [BL] #21",
+      "server": "89.105.208.118",
+      "server_port": 443,
+      "uuid": "279828c6-13f2-439c-9a4e-ea7d4f470fa4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
+          "short_id": "6d6f13013d3e1d0c"
+        },
+        "enabled": true,
+        "server_name": "g10.steptofsvo.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Doetinchem | [BL] #22",
+      "server": "89.105.208.120",
+      "server_port": 443,
+      "uuid": "279828c6-13f2-439c-9a4e-ea7d4f470fa4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
+          "short_id": "6d6f13013d3e1d0c"
+        },
+        "enabled": true,
+        "server_name": "g10.steptofsvo.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Doetinchem | [BL] #23",
+      "server": "g10.steptofsvo.com",
+      "server_port": 443,
+      "uuid": "279828c6-13f2-439c-9a4e-ea7d4f470fa4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
+          "short_id": "6d6f13013d3e1d0c"
+        },
+        "enabled": true,
+        "server_name": "g10.steptofsvo.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Doetinchem | [BL] #24",
+      "server": "g3.steptofsvo.com",
+      "server_port": 443,
+      "uuid": "279828c6-13f2-439c-9a4e-ea7d4f470fa4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
+          "short_id": "6d6f13013d3e1d0c"
+        },
+        "enabled": true,
+        "server_name": "g3.steptofsvo.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Oude Meer | [BL] #25",
+      "server": "80.89.237.87",
+      "server_port": 443,
+      "uuid": "Fluffy_VPN-uQuRPvrt",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "yYOCEJEfnwByiWiiSNeCMhRqmViAhavOp8QaGWHx6VI"
+        },
+        "enabled": true,
+        "server_name": "very-mega-best.top"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf9\ud83c\uddf7 Turkey | \ud83c\udf10 | [BL] #26",
+      "server": "ru9.aimodelhub.top",
+      "server_port": 443,
+      "uuid": "b85b1e90-b5ed-0002-b433-bf9d2eca0e42",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jwT3lcIzJQMjzBKRNsmyRGrgaa1qNfE7pQF_nAKu0GA",
+          "short_id": "a73cf719b624"
+        },
+        "enabled": true,
+        "server_name": "ru9.aimodelhub.top"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf9\ud83c\uddf7 Turkey, Istanbul | [BL] #27",
+      "server": "auto1.aruxg.ir",
+      "server_port": 443,
+      "uuid": "90f4846d-2a01-4228-86d5-9eef3e39885f",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "x0kfWjTiGUdijlMbIdc4M8uA78zp9xde-i9MGjTVuQI",
+          "short_id": "0041ecd7803e"
+        },
+        "enabled": true,
+        "server_name": "www.google.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf7\ud83c\uddfa Russia, Bugry | [BL] #28",
+      "server": "45.9.14.156",
+      "server_port": 18543,
+      "uuid": "6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "N6QQQTEXQaXI9PRxOYdlnsdviaLwu4eP4sIq9ifz5VM",
+          "short_id": "fb0839b3bc1d6e"
+        },
+        "enabled": true,
+        "server_name": "www.zvuk.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf7\ud83c\uddfa Russia, Bugry | [BL] #29",
+      "server": "ca-1.omuvpn.tech",
+      "server_port": 18543,
+      "uuid": "6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "N6QQQTEXQaXI9PRxOYdlnsdviaLwu4eP4sIq9ifz5VM",
+          "short_id": "fb0839b3bc1d6e"
+        },
+        "enabled": true,
+        "server_name": "www.zvuk.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\udf10 Anycast-IP | \ud83c\udde9\ud83c\uddea \ud83c\uddeb\ud83c\uddf7 | [BL] #30",
+      "server": "83.243.86.131",
+      "server_port": 443,
+      "uuid": "1b43419a-b711-40d4-a0ee-eb5c73e60c92",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZSFjVI9pyqawgPY_0shmNRdTdwfBBFWRMPcrKIzyHSw",
+          "short_id": "509d"
+        },
+        "enabled": true,
+        "server_name": "tradingview.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\udf10 Anycast-IP | \ud83c\udde9\ud83c\uddea \ud83c\uddeb\ud83c\uddf7 | [BL] #31",
+      "server": "fr-node.prostosetup.org",
+      "server_port": 443,
+      "uuid": "1b43419a-b711-40d4-a0ee-eb5c73e60c92",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZSFjVI9pyqawgPY_0shmNRdTdwfBBFWRMPcrKIzyHSw",
+          "short_id": "509d"
+        },
+        "enabled": true,
+        "server_name": "tradingview.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\udf10 Anycast-IP | \ud83c\udde9\ud83c\uddea \ud83c\uddf3\ud83c\uddf1 | [BL] #32",
+      "server": "0ru35.tcpdoor.net",
+      "server_port": 7443,
+      "uuid": "c4d69096-4026-4da5-9485-20a3da91cb14",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qj9jDHuvhBV15-FoXJ42Qe_ZkvppLY0KHTS1SAlZgmg",
+          "short_id": "9510ee26"
+        },
+        "enabled": true,
+        "server_name": "video.tcpnet.fun"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\udf10 Anycast-IP | \ud83c\uddeb\ud83c\uddee \ud83c\uddec\ud83c\udde7 | [BL] #33",
+      "server": "31.76.53.0",
+      "server_port": 443,
+      "uuid": "749a5df1-2d12-45cf-80f3-f85ea6b2e405",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Fp0-VrMBeaQe9xOrehDYHt0mqTZL-5CdfuMEzoXkOE8"
+        },
+        "enabled": true,
+        "server_name": "google.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\udf10 Anycast-IP | \ud83c\uddec\ud83c\udde7 \ud83c\uddf1\ud83c\uddfb | [BL] #34",
+      "server": "g7.steptofsvo.com",
+      "server_port": 443,
+      "uuid": "279828c6-13f2-439c-9a4e-ea7d4f470fa4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
+          "short_id": "6d6f13013d3e1d0c"
+        },
+        "enabled": true,
+        "server_name": "g7.steptofsvo.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\udf10 Anycast-IP | \ud83c\uddec\ud83c\udde7 \ud83c\uddf1\ud83c\uddfb | [BL] #35",
+      "server": "g8.steptofsvo.com",
+      "server_port": 443,
+      "uuid": "279828c6-13f2-439c-9a4e-ea7d4f470fa4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
+          "short_id": "6d6f13013d3e1d0c"
+        },
+        "enabled": true,
+        "server_name": "g8.steptofsvo.com"
+      },
+      "connect_timeout": "3s"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\udf10 Anycast-IP | \ud83c\uddec\ud83c\udde7 \ud83c\uddf1\ud83c\uddfb | [BL] #36",
+      "server": "g9.steptofsvo.com",
+      "server_port": 443,
+      "uuid": "279828c6-13f2-439c-9a4e-ea7d4f470fa4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
+          "short_id": "6d6f13013d3e1d0c"
+        },
+        "enabled": true,
+        "server_name": "g9.steptofsvo.com"
+      },
+      "connect_timeout": "3s"
+    }
+  ],
+  "route": {
+    "final": "autosel",
+    "rules": [
+      {
+        "port": "53",
+        "action": "hijack-dns"
+      }
+    ]
+  }
+}

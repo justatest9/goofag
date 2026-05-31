@@ -21,6 +21,7 @@ cfg ='''
         "tag": "tun-in",
         "address": "172.19.0.1/30",
         "stack": "gvisor",
+        "auto_route": true,
         "exclude_package": ["io.nekohasekai.sfa"]
     }
     ],
@@ -34,8 +35,8 @@ cfg ='''
         "final": "autosel",
         "rules":[
             {
-                "protocol": "dns",
-                "outbound": "direct"
+                "port": "53",
+                "action": "hijack-dns"
             }
         ]
 
