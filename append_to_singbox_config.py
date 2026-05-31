@@ -35,7 +35,7 @@ cfg ='''
         "final": "autosel",
         "rules":[
             {
-                "port": "53",
+                "port": 53,
                 "action": "hijack-dns"
             }
         ]
