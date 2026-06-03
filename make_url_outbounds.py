@@ -6,51 +6,10 @@ import yarl
 import sys
 import json
 import urllib.parse
+from parset import parseline
 
 def subs(ard, keyd, ars, keys):
     if keys in ars.keys(): ard[keyd] = ars[keys]
-
-# parse line to outbound map
-def parseline(line):
-    u = yarl.URL(line)
-    
-    # making singbox vless outbound array
-    vless_outbound = {}
-    vless_outbound['type'] = 'vless'
-    vless_outbound['tag'] = urllib.parse.unquote(line.split('#')[1])
-    vless_outbound['server'] = u.host 
-    vless_outbound['server_port'] = u.port
-    vless_outbound['uuid'] = u.user
-
-    subs(vless_outbound, 'flow', u.query, 'flow')
-    subs(vless_outbound, 'packet_encoding', u.query, 'packetEncoding')
-
-    
-    tls = {}
-    utls = {}
-    reality = {}
-    sec = u.query['security'] if 'security' in u.query.keys() else 'none'
-
-    vless_outbound['tls'] = tls
-    
-    if 'fp' in u.query.keys() or sec == 'reality':
-        tls['utls'] = utls
-        utls['enabled'] = True
-        utls['fingerprint'] = ''
-
-    subs(utls, 'fingerprint', u.query, 'fp')
-        
-    if sec == 'reality': 
-        tls['reality'] = reality
-        reality['enabled'] = True
-        subs(reality, 'public_key', u.query, 'pbk')
-        subs(reality, 'short_id', u.query, 'sid')
-
-    if sec != 'none': 
-        tls['enabled'] = True
-        if 'sni' in u.query.keys(): tls['server_name'] = u.query['sni'] 
-
-    return vless_outbound
 
 def kill_dupes(olist):
     reslist = []

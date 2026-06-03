@@ -6,28 +6,27 @@
 import yarl
 import sys
 import json
+import urllib.parse
 
-def subs(ard, keyd, ars, keys):
-    if keys in ars.keys(): ard[keyd] = ars[keys]
-
-def main():
-
-    argc = len(sys.argv)
-    argv = sys.argv
-    u = yarl.URL(argv[1])
-    lport = 1085 
-    if argc>2: 
-        lport = int(argv[2])
+def parseline(line):
+    u = yarl.URL(line)
+    
     # making singbox vless outbound array
     vless_outbound = {}
     vless_outbound['type'] = 'vless'
-    vless_outbound['tag'] = 'proxy'
-    vless_outbound['server'] = u.host
+    vless_outbound['tag'] = urllib.parse.unquote(line.split('#')[1])
+    vless_outbound['server'] = u.host 
     vless_outbound['server_port'] = u.port
     vless_outbound['uuid'] = u.user
 
     subs(vless_outbound, 'flow', u.query, 'flow')
     subs(vless_outbound, 'packet_encoding', u.query, 'packetEncoding')
+
+    try:
+        if vless_outbound['packet_encoding'] == 'none':
+            vless_outbound.pop('packet_encoding')
+    except:
+        pass
 
     
     tls = {}
@@ -53,6 +52,22 @@ def main():
     if sec != 'none': 
         tls['enabled'] = True
         if 'sni' in u.query.keys(): tls['server_name'] = u.query['sni'] 
+
+    return vless_outbound
+
+def subs(ard, keyd, ars, keys):
+    if keys in ars.keys(): ard[keyd] = ars[keys]
+
+def main():
+
+    argc = len(sys.argv)
+    argv = sys.argv
+    lport = 1085 
+    if argc>2: 
+        lport = int(argv[2])
+    
+    vless_outbound = parseline(argv[1])
+    vless_outbound['tag'] = 'proxy'
 
     local_inbound = {}
     local_inbound['type'] = 'socks'

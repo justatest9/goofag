@@ -11,7 +11,7 @@ curl -L -O -s https://github.com/igareck/vpn-configs-for-russia/raw/refs/heads/m
 cd $CURPT
 
 base64 -d $TMP/BLACK_VLESS_RUS_base64.txt >$TMP/BLACK_VLESS_RUS_base64_dec.txt
-grep reality $TMP/BLACK_VLESS_RUS_base64_dec.txt | grep -iv 'united.*states' >$TMP/BLACK_VLESS.txt
+cat $TMP/BLACK_VLESS_RUS_base64_dec.txt | grep -iv 'united.*states' >$TMP/BLACK_VLESS.txt
 
 echo $PTH
 cat $TMP/BLACK_VLESS.txt | python $PTH/make_url_outbounds.py | python append_to_singbox_config.py >$PTH/singbox1.json
