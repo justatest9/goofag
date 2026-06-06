@@ -20,13 +20,7 @@ def parseline(line):
     vless_outbound['uuid'] = u.user
 
     subs(vless_outbound, 'flow', u.query, 'flow')
-    subs(vless_outbound, 'packet_encoding', u.query, 'packetEncoding')
-
-    try:
-        if vless_outbound['packet_encoding'] == 'none':
-            vless_outbound.pop('packet_encoding')
-    except:
-        pass
+    #subs(vless_outbound, 'packet_encoding', u.query, 'packetEncoding')
 
     
     tls = {}
