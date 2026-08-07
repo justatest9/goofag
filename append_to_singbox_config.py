@@ -3,6 +3,8 @@
 import json
 import sys
 from collections import Counter
+import base64
+import yarl
 
 cfg ='''
 {
@@ -29,14 +31,41 @@ cfg ='''
         {
             "type": "direct",
             "tag": "direct"
+        },
+        {
+            "type": "socks",
+            "tag": "hideme",
+            "server": "",
+            "server_port": ""
         }
     ],
     "route": {
         "final": "autosel",
         "rules":[
             {
+                "action": "sniff"
+            },
+            {
                 "port": 53,
                 "action": "hijack-dns"
+            },
+            {
+                "domain_suffix": ["ru", "su", "yandex.com", "yandex.net", ".xn--p1ai"],
+                "outbound": "direct"
+            },
+            {
+                "domain_suffix" : [
+                    "youtube.com",
+                    "youtu.be",
+                    "ytimg.com",
+                    "ggpht.com",
+                    "googlevideo.com",
+                    "youtube-nocookie.com",
+                    "://googleapis.com",
+                    "yt.be",
+                    "nhacuatui.com" 
+                    ],
+                "outbound": "hideme"
             }
         ]
 
@@ -44,12 +73,26 @@ cfg ='''
 
 }
 '''
+def get_hideme_addr_port():
+    # adding hideme from sub64.txt 
+    fl = open("sub64.txt")
+    line = base64.b64decode (fl.read())   
+    u = yarl.URL(line.decode())
 
+    return u.host, u.port 
+    
 def main():
     config1 = json.loads(sys.stdin.read())
     config = json.loads(cfg)
     config['outbounds'] += config1['outbounds']
-
+    
+    hideme_data = get_hideme_addr_port()
+    o1 = config['outbounds'][1]
+    if o1['tag'] == 'hideme':
+        config['outbounds'][1]['server'] = hideme_data[0]
+        config['outbounds'][1]['server_port'] = hideme_data[1]
+    else:
+        raise RuntimeError("Check cfg format. tag hideme should be [1]") 
     print(json.dumps(config, indent=2))
 
 if __name__ == "__main__": main()
