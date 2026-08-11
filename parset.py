@@ -7,6 +7,25 @@ import yarl
 import sys
 import json
 import urllib.parse
+import subprocess
+
+tmp_file = "/tmp/singtest/c.json"
+
+def err(str):
+    print(str, file=sys.stderr)
+
+def validate_singbox_config(outbnd):
+    conf = {}
+    conf['outbounds'] = []
+    conf['outbounds'].append(outbnd)
+    # err(conf)
+    ftmp_file = open(tmp_file, mode="w")
+    print(json.dumps(conf, indent=2), file=ftmp_file)
+    ftmp_file.close()
+    res = subprocess.run(["sing-box", "check", "-c", tmp_file], stdout=subprocess.DEVNULL)
+    if res.returncode == 0:
+        return True
+    return False
 
 def parseline(line):
     u = yarl.URL(line)
@@ -46,8 +65,10 @@ def parseline(line):
     if sec != 'none': 
         tls['enabled'] = True
         if 'sni' in u.query.keys(): tls['server_name'] = u.query['sni'] 
-
-    return vless_outbound
+    
+    if validate_singbox_config(vless_outbound):
+        return vless_outbound
+    return {}
 
 def subs(ard, keyd, ars, keys):
     if keys in ars.keys(): ard[keyd] = ars[keys]

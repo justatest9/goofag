@@ -29,7 +29,9 @@ def main():
     outbounds = []
     for line in sys.stdin:
         cline = line.strip()
-        outbounds.append(parseline(cline))
+        outbnd = parseline(cline)
+        if outbnd != {}:
+            outbounds.append(outbnd)
 
     #print(outbounds)
     print('Initial len: ', len(outbounds), end='', file=sys.stderr)
@@ -38,7 +40,7 @@ def main():
 
     for i in range(len(outbounds)):
         outbounds[i]['tag'] += ' #' + str(i)
-        outbounds[i]['connect_timeout'] = '3s'
+        #outbounds[i]['connect_timeout'] = '3s'
     # making config
     
     urltest_o = {}
@@ -48,7 +50,7 @@ def main():
 
     urltest_o['url'] = 'https://cp.cloudflare.com'
     urltest_o['interval'] = '1m'
-    urltest_o['tolerance'] = 100
+    urltest_o['tolerance'] = 3000
     urltest_o['idle_timeout'] = '30m'
     urltest_o['interrupt_exist_connections'] = False
     outbounds = [urltest_o] + outbounds
