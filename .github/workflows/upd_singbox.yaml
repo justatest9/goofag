@@ -19,6 +19,7 @@ jobs:
         run: pip install yarl
       - name: Update File
         run: |
+          bash singbox_install_latest.sh
           # Пишем время и маты в файл
           echo "Обновлено: $(date) - ебаная сука" > status.txt
           # Сюда же добавим запуск твоего парсера, когда он будет готов
