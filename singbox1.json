@@ -1,4 +1,9 @@
 {
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090"
+    }
+  },
   "dns": {
     "servers": [
       {
@@ -29,22 +34,23 @@
       "type": "socks",
       "tag": "hideme",
       "server": "185.195.71.218",
-      "server_port": 35365
+      "server_port": 45929
     },
     {
       "type": "urltest",
       "tag": "autosel",
       "outbounds": [
         ".\ud81a\udd54 \u0741 \u02d6\u05b4\ud83d\udef8\u0f04\u02d6\u00b0. | [BL] #0",
-        ".\ud81a\udd54 \u0741 \u02d6\u05b4\ud83d\udef8\u0f04\u02d6\u00b0. | [BL] #1",
-        "\ud83c\udde9\ud83c\uddea Germany, Frankfurt am Main | [BL] #2",
-        "\ud83c\udde9\ud83c\uddea Germany, Karlsruhe (Nordweststadt) | [BL] #3",
-        "\ud83c\uddf5\ud83c\uddf1 Poland, Warsaw | [BL] #4",
+        "\ud83c\uddeb\ud83c\uddee Finland, Helsinki (Harju) | [BL] #1",
+        "\ud83c\uddeb\ud83c\uddee Finland, Helsinki (Harju) | [BL] #2",
+        "\ud83c\uddeb\ud83c\uddf7 France, Paris | [BL] #3",
+        "\ud83c\uddeb\ud83c\uddf7 France, Paris | [BL] #4",
         "\ud83c\uddf5\ud83c\uddf1 Poland, Warsaw | [BL] #5",
-        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #6",
-        "\ud83c\uddf9\ud83c\uddf7 Turkey, Istanbul | [BL] #7",
-        "\ud83c\uddf9\ud83c\uddf7 Turkey, Istanbul | [BL] #8",
-        "\ud83c\uddf9\ud83c\uddf7 Turkey, Istanbul | [BL] #9"
+        "\ud83c\uddf7\ud83c\uddf4 Romania, Bucharest | [BL] #6",
+        "\ud83c\uddea\ud83c\uddf8 Spain | \ud83c\udf10 | [BL] #7",
+        "\ud83c\udde8\ud83c\udded Switzerland | \ud83c\udf10 | [BL] #8",
+        "\ud83c\udf10 Anycast-IP | \ud83c\udded\ud83c\uddf0 \ud83c\uddf8\ud83c\uddec | [BL] #9",
+        "\ud83c\udf10 Anycast-IP | \ud83c\udded\ud83c\uddf0 \ud83c\uddf8\ud83c\uddec | [BL] #10"
       ],
       "url": "https://cp.cloudflare.com",
       "interval": "1m",
@@ -55,9 +61,9 @@
     {
       "type": "vless",
       "tag": ".\ud81a\udd54 \u0741 \u02d6\u05b4\ud83d\udef8\u0f04\u02d6\u00b0. | [BL] #0",
-      "server": "netherlands1.banovano.space",
-      "server_port": 8443,
-      "uuid": "a6d08a18-3244-471c-8af0-56ddecbb7897",
+      "server": "157.22.176.96",
+      "server_port": 3001,
+      "uuid": "e586c19d-2f64-4a11-8f13-a21186ce6cca",
       "tls": {
         "utls": {
           "enabled": true,
@@ -65,20 +71,39 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "ySGdExSQZ93z67nSi9jbIEdDkCjc1ZgnqXmH2qeBdE0",
-          "short_id": "660cd5e2"
+          "public_key": "0wHK7-VJ5ich3gTaQbBhMyyEtXpNGmVNskbIsnLBTQ8",
+          "short_id": "0000008795147229"
         },
         "enabled": true,
-        "server_name": "dl.google.com"
+        "server_name": "www.google.com"
       }
     },
     {
       "type": "vless",
-      "tag": ".\ud81a\udd54 \u0741 \u02d6\u05b4\ud83d\udef8\u0f04\u02d6\u00b0. | [BL] #1",
-      "server": "94.249.225.81",
-      "server_port": 443,
-      "uuid": "f4dbc770-016d-4a0f-82f0-d83ee6f45da3",
-      "flow": "xtls-rprx-vision",
+      "tag": "\ud83c\uddeb\ud83c\uddee Finland, Helsinki (Harju) | [BL] #1",
+      "server": "78.17.40.188",
+      "server_port": 2443,
+      "uuid": "d80cd696-ec21-4afd-ad8e-cb65893535a4",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "android"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rRg3JiP2006ldJYh2TDPAn7dtlXLcSHdgHgkGI_HZTE",
+          "short_id": "ef567890"
+        },
+        "enabled": true,
+        "server_name": "ads.x5.ru"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddeb\ud83c\uddee Finland, Helsinki (Harju) | [BL] #2",
+      "server": "78.17.96.52",
+      "server_port": 2443,
+      "uuid": "d80cd696-ec21-4afd-ad8e-cb65893535a4",
       "tls": {
         "utls": {
           "enabled": true,
@@ -86,77 +111,80 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "X6zcH8pCUXrauNQvbNkm8e_oTdB0wOr8eCMCzs3b1Tc"
+          "public_key": "rRg3JiP2006ldJYh2TDPAn7dtlXLcSHdgHgkGI_HZTE",
+          "short_id": "ef567890"
         },
         "enabled": true,
-        "server_name": "warm-gazelle.cdn.cachefleet.com"
+        "server_name": "ads.x5.ru"
       }
     },
     {
       "type": "vless",
-      "tag": "\ud83c\udde9\ud83c\uddea Germany, Frankfurt am Main | [BL] #2",
-      "server": "91.185.83.94",
-      "server_port": 5443,
-      "uuid": "8e9e9f2a-f4ee-48a3-aa3f-d79169890ca8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "android"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "A3BZvaih9lBbMaKWjndiEdhCDZLMRbeRD1fI8CP4324"
-        },
-        "enabled": true,
-        "server_name": "5post-gate.x5.ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "\ud83c\udde9\ud83c\uddea Germany, Karlsruhe (Nordweststadt) | [BL] #3",
-      "server": "152.53.173.90",
+      "tag": "\ud83c\uddeb\ud83c\uddf7 France, Paris | [BL] #3",
+      "server": "novea.shieldix.top",
       "server_port": 443,
-      "uuid": "f4dbc770-016d-4a0f-82f0-d83ee6f45da3",
+      "uuid": "b50a52ba-891f-44ff-af82-f5f0f3317024",
       "flow": "xtls-rprx-vision",
       "tls": {
         "utls": {
           "enabled": true,
-          "fingerprint": "android"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "HAuFt4Q6WDEwNYO1BOTpekM2HXwTaZxXYVReYyP3NVI"
+          "public_key": "V9MHR6nhlKPenVUq1172uIHJFZYOkRVqSOUkjCS4430",
+          "short_id": "f0ba53a31b489b3e"
         },
         "enabled": true,
-        "server_name": "fastsync.xyz"
+        "server_name": "novea.shieldix.top"
       }
     },
     {
       "type": "vless",
-      "tag": "\ud83c\uddf5\ud83c\uddf1 Poland, Warsaw | [BL] #4",
-      "server": "201.24.124.122",
-      "server_port": 9892,
-      "uuid": "130e6aab-9eba-441e-9021-22cbccc72832",
+      "tag": "\ud83c\uddeb\ud83c\uddf7 France, Paris | [BL] #4",
+      "server": "194.55.137.138",
+      "server_port": 2443,
+      "uuid": "d80cd696-ec21-4afd-ad8e-cb65893535a4",
       "tls": {
         "utls": {
           "enabled": true,
-          "fingerprint": "android"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU"
+          "public_key": "rRg3JiP2006ldJYh2TDPAn7dtlXLcSHdgHgkGI_HZTE",
+          "short_id": "ef567890"
         },
         "enabled": true,
-        "server_name": "dl.google.com"
+        "server_name": "ads.x5.ru"
       }
     },
     {
       "type": "vless",
       "tag": "\ud83c\uddf5\ud83c\uddf1 Poland, Warsaw | [BL] #5",
-      "server": "144.31.3.136",
-      "server_port": 443,
-      "uuid": "f4dbc770-016d-4a0f-82f0-d83ee6f45da3",
+      "server": "89.125.27.212",
+      "server_port": 2443,
+      "uuid": "d80cd696-ec21-4afd-ad8e-cb65893535a4",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "android"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rRg3JiP2006ldJYh2TDPAn7dtlXLcSHdgHgkGI_HZTE",
+          "short_id": "ef567890"
+        },
+        "enabled": true,
+        "server_name": "ads.x5.ru"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddf7\ud83c\uddf4 Romania, Bucharest | [BL] #6",
+      "server": "node14.fastdatastream.com",
+      "server_port": 8443,
+      "uuid": "2c532831-127d-45d7-a84e-11ce36a6b1af",
       "flow": "xtls-rprx-vision",
       "tls": {
         "utls": {
@@ -165,18 +193,19 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "KOgPteoWEwtVtykS2FGV5NHdZw6197VzbITPGkUJDBQ"
+          "public_key": "gyKPxwQBhJUGVHE2t4R2pOf64NkdSNgu3DqMxOzKtGU",
+          "short_id": "5b"
         },
         "enabled": true,
-        "server_name": "proud-dynamo.cdn.cachefleet.com"
+        "server_name": "www.intel.com"
       }
     },
     {
       "type": "vless",
-      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #6",
-      "server": "ferrvia.pulsio.cfd",
-      "server_port": 443,
-      "uuid": "0dc40f96-a2d1-4382-88b7-70ee01853229",
+      "tag": "\ud83c\uddea\ud83c\uddf8 Spain | \ud83c\udf10 | [BL] #7",
+      "server": "193.17.183.81",
+      "server_port": 8433,
+      "uuid": "3a4dbd51-72ea-4c20-a764-f51de001c0ab",
       "flow": "xtls-rprx-vision",
       "tls": {
         "utls": {
@@ -185,19 +214,39 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "OTuJX9K_E2nHhg0mXT2uFMNIO7746G6c5rlT6OscQGk",
-          "short_id": "9698d67e63bc8ee0"
+          "public_key": "VnpuNVes24AiqJofMykF5ZPj_1ufZZyHnj_oAZ4_8kw",
+          "short_id": "81f3d1e4c057"
         },
         "enabled": true,
-        "server_name": "ferrvia.pulsio.cfd"
+        "server_name": "yahoo.com"
       }
     },
     {
       "type": "vless",
-      "tag": "\ud83c\uddf9\ud83c\uddf7 Turkey, Istanbul | [BL] #7",
-      "server": "45.196.201.210",
+      "tag": "\ud83c\udde8\ud83c\udded Switzerland | \ud83c\udf10 | [BL] #8",
+      "server": "45.90.56.105",
       "server_port": 443,
-      "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85",
+      "uuid": "26a15aff-28e6-4e6d-9458-d631c9aec841",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "android"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bPxKgZHO13GJGKjbHz0BVnsw8UIcOjz2yz8VCgGv5BI",
+          "short_id": "6fce2d08"
+        },
+        "enabled": true,
+        "server_name": "static.gcore.pro"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\udf10 Anycast-IP | \ud83c\udded\ud83c\uddf0 \ud83c\uddf8\ud83c\uddec | [BL] #9",
+      "server": "185.92.47.57",
+      "server_port": 443,
+      "uuid": "8273201d-45fa-3e29-beb5-f2c79bc23bf5",
       "flow": "xtls-rprx-vision",
       "tls": {
         "utls": {
@@ -206,19 +255,19 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
-          "short_id": "c6ef72e4635d15a5"
+          "public_key": "O2f0dq8rg1CuixizZDC226RZzUWFMNg2qjMSHwPP20Y",
+          "short_id": "74ee5f64"
         },
         "enabled": true,
-        "server_name": "storage.yandex.net"
+        "server_name": "82ee2658s70.csgfw.top"
       }
     },
     {
       "type": "vless",
-      "tag": "\ud83c\uddf9\ud83c\uddf7 Turkey, Istanbul | [BL] #8",
-      "server": "45.196.201.217",
+      "tag": "\ud83c\udf10 Anycast-IP | \ud83c\udded\ud83c\uddf0 \ud83c\uddf8\ud83c\uddec | [BL] #10",
+      "server": "s892.wagahaha.xyz",
       "server_port": 443,
-      "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85",
+      "uuid": "8273201d-45fa-3e29-beb5-f2c79bc23bf5",
       "flow": "xtls-rprx-vision",
       "tls": {
         "utls": {
@@ -227,32 +276,11 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
-          "short_id": "c6ef72e4635d15a5"
+          "public_key": "O2f0dq8rg1CuixizZDC226RZzUWFMNg2qjMSHwPP20Y",
+          "short_id": "74ee5f64"
         },
         "enabled": true,
-        "server_name": "storage.yandex.net"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "\ud83c\uddf9\ud83c\uddf7 Turkey, Istanbul | [BL] #9",
-      "server": "45.196.201.221",
-      "server_port": 443,
-      "uuid": "f75814f6-8f81-4847-b792-168c41f2dc85",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04",
-          "short_id": "c6ef72e4635d15a5"
-        },
-        "enabled": true,
-        "server_name": "storage.yandex.net"
+        "server_name": "82ee2658s70.csgfw.top"
       }
     }
   ],
