@@ -18,9 +18,9 @@ base64 -d $TMP/BLACK_VLESS_RUS_base64.txt >$TMP/BLACK_VLESS_RUS_base64_dec.txt
 
 rm $TMP/BLACK_VLESS.txt
 grep reality $TMP/ebrasha1.txt >>$TMP/BLACK_VLESS.txt
-grep reality $TMP/ebrasha2.txt >>$TMP/BLACK_VLESS.txt
-grep reality $TMP/ebrasha3.txt >>$TMP/BLACK_VLESS.txt
-grep reality $TMP/ebrasha4.txt >>$TMP/BLACK_VLESS.txt
+#grep reality $TMP/ebrasha2.txt >>$TMP/BLACK_VLESS.txt
+#grep reality $TMP/ebrasha3.txt >>$TMP/BLACK_VLESS.txt
+#grep reality $TMP/ebrasha4.txt >>$TMP/BLACK_VLESS.txt
 #grep . $TMP/BLACK_VLESS_RUS_base64_dec.txt | grep -iv 'united.*states' | grep -iv russia >$TMP/BLACK_VLESS.txt
 #grep reality $TMP/BLACK_VLESS_RUS_base64_dec.txt | grep -iv 'united.*states' | grep -iv russia >$TMP/BLACK_VLESS.txt
 
