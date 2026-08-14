@@ -31,7 +31,7 @@ jobs:
         run: |
           git config --global user.name "Github Action Bot"
           git config --global user.email "actions@github.com"
-          git add singbox1.json status.txt sub64.txt log.txt
+          git add singbox1.json singbox2.json status.txt sub64.txt log.txt
           LAST_AUTHOR=$(git log -1 --format='%an')
           CMESSAGE="Periodically auto-update [skip ci]"
           if [ "$LAST_AUTHOR" == "Github Action Bot" ]; then
