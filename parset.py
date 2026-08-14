@@ -8,8 +8,10 @@ import sys
 import json
 import urllib.parse
 import subprocess
+import os
 
-tmp_file = "/tmp/singtest/c.json"
+
+tmp_file="/tmp/singtest/c" + str(os.getpid()) +".json"
 
 def err(str):
     print(str, file=sys.stderr)
@@ -23,6 +25,7 @@ def validate_singbox_config(outbnd):
     print(json.dumps(conf, indent=2), file=ftmp_file)
     ftmp_file.close()
     res = subprocess.run(["sing-box", "check", "-c", tmp_file], stdout=subprocess.DEVNULL)
+    os.remove(tmp_file)
     if res.returncode == 0:
         return True
     return False
@@ -53,6 +56,7 @@ def parseline(line):
         tls['utls'] = utls
         utls['enabled'] = True
         utls['fingerprint'] = ''
+        tls['enabled'] = True
 
     subs(utls, 'fingerprint', u.query, 'fp')
         
@@ -73,6 +77,8 @@ def parseline(line):
 def subs(ard, keyd, ars, keys):
     if keys in ars.keys(): ard[keyd] = ars[keys]
 
+# dumps singbox testing config to stdout
+# $1  - port
 def main():
 
     argc = len(sys.argv)
