@@ -66,9 +66,10 @@ cfg ='''
                     "ggpht.com",
                     "googlevideo.com",
                     "youtube-nocookie.com",
-                    "://googleapis.com",
+                    "googleapis.com",
                     "yt.be",
-                    "nhacuatui.com" 
+                    "nhacuatui.com",
+                    "google.com"
                     ],
                 "outbound": "hideme"
             }
