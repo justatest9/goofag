@@ -34,7 +34,7 @@
       "type": "socks",
       "tag": "hideme",
       "server": "185.195.71.218",
-      "server_port": 40283
+      "server_port": 42435
     },
     {
       "type": "urltest",
@@ -93,12 +93,12 @@
           "enabled": true,
           "fingerprint": "android"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "O4of5fbG7Ns3fBdBF0bDU8Fa8q-mdk7YLgOgvAWPeF8",
           "short_id": "f85aebea"
         },
-        "enabled": true,
         "server_name": "media11.abvphelp.cc"
       }
     },
@@ -114,12 +114,12 @@
           "enabled": true,
           "fingerprint": "chrome"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "Tl0GCbgfsNHxGGN0TzZt3_OFsPc4xe1kMkn_L3qwiS8",
           "short_id": "3d8b549801de"
         },
-        "enabled": true,
         "server_name": "ya.ru"
       }
     },
@@ -135,12 +135,12 @@
           "enabled": true,
           "fingerprint": "chrome"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "V-B12dvv0fVIwcmcRNdMQIcc4nmqsYB_PR_3X4VVB0A",
           "short_id": "91a7a393d805f5c6"
         },
-        "enabled": true,
         "server_name": "ch1.murhost.network"
       }
     },
@@ -156,12 +156,12 @@
           "enabled": true,
           "fingerprint": "chrome"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "8qUm4S6MR9bLa-ZfblO64aKjRIwGEFEwdVIxgz_tbn4",
           "short_id": "33b5887524592cad"
         },
-        "enabled": true,
         "server_name": "tunelio.ciphero.xyz"
       }
     },
@@ -192,12 +192,12 @@
           "enabled": true,
           "fingerprint": "edge"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "P1EGw38HA0Y9Mcs_TdTt7pDCwyNVD9V8g32Ckadc-Xw",
           "short_id": "b5e1fdad"
         },
-        "enabled": true,
         "server_name": "swdist.apple.com"
       }
     },
@@ -228,12 +228,12 @@
           "enabled": true,
           "fingerprint": "edge"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "jJQ3uy2Se5ObXCsYJnT-2ukvUMRiOBBfOZ38Wnm2Ygs",
           "short_id": "a75046af5dcaf1d2"
         },
-        "enabled": true,
         "server_name": "de1.murhost.network"
       }
     },
@@ -249,12 +249,12 @@
           "enabled": true,
           "fingerprint": "android"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "jJQ3uy2Se5ObXCsYJnT-2ukvUMRiOBBfOZ38Wnm2Ygs",
           "short_id": "a75046af5dcaf1d2"
         },
-        "enabled": true,
         "server_name": "de1.murhost.network"
       }
     },
@@ -270,12 +270,12 @@
           "enabled": true,
           "fingerprint": "android"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "P1EGw38HA0Y9Mcs_TdTt7pDCwyNVD9V8g32Ckadc-Xw",
           "short_id": "b5e1fdad"
         },
-        "enabled": true,
         "server_name": "swdist.apple.com"
       }
     },
@@ -291,12 +291,12 @@
           "enabled": true,
           "fingerprint": "firefox"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "VWhynxStqii0ll4ttnUJWG4Qy9dJFXhZu6Y8OiIO5Vk",
           "short_id": "c577182abe08e64c"
         },
-        "enabled": true,
         "server_name": "pg-bot.gigatapbot.top"
       }
     },
@@ -312,12 +312,12 @@
           "enabled": true,
           "fingerprint": "android"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "V9MHR6nhlKPenVUq1172uIHJFZYOkRVqSOUkjCS4430",
           "short_id": "f0ba53a31b489b3e"
         },
-        "enabled": true,
         "server_name": "arclio.shieldix.top"
       }
     },
@@ -339,7 +339,8 @@
         "utls": {
           "enabled": true,
           "fingerprint": "android"
-        }
+        },
+        "enabled": true
       }
     },
     {
@@ -369,12 +370,12 @@
           "enabled": true,
           "fingerprint": "android"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "OTuJX9K_E2nHhg0mXT2uFMNIO7746G6c5rlT6OscQGk",
           "short_id": "9698d67e63bc8ee0"
         },
-        "enabled": true,
         "server_name": "drifto.pulsio.cfd"
       }
     },
@@ -390,12 +391,12 @@
           "enabled": true,
           "fingerprint": "chrome"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
           "short_id": "6d6f13013d3e1d0c"
         },
-        "enabled": true,
         "server_name": "n1.cloudgaming.one"
       }
     },
@@ -411,12 +412,12 @@
           "enabled": true,
           "fingerprint": "edge"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "imMbjIHjVAatF3I36WWu7SnesG5laWuokwad0hB19R8",
           "short_id": "b5f4c7a73b9dec66"
         },
-        "enabled": true,
         "server_name": "cdnjs.cloudflare.com"
       }
     },
@@ -431,12 +432,12 @@
           "enabled": true,
           "fingerprint": "edge"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "2dpt8KZvY90iXmpdsCMkvK_00uHIhNbnz0VYrVFcJ3k",
           "short_id": "aa6f080efb8928f9"
         },
-        "enabled": true,
         "server_name": "www.google.com"
       }
     },
@@ -451,12 +452,12 @@
           "enabled": true,
           "fingerprint": "chrome"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "2dpt8KZvY90iXmpdsCMkvK_00uHIhNbnz0VYrVFcJ3k",
           "short_id": "aa6f080efb8928f9"
         },
-        "enabled": true,
         "server_name": "www.google.com"
       }
     },
@@ -487,12 +488,12 @@
           "enabled": true,
           "fingerprint": "firefox"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "-nB-tCeZ4Zr72ArHUKnbUphbs4PlBS6iId6PkrPQQTE",
           "short_id": "84f9881951050a30"
         },
-        "enabled": true,
         "server_name": "gb1.murhost.network"
       }
     },
@@ -568,12 +569,12 @@
           "enabled": true,
           "fingerprint": "android"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "rkRBWVPGbMdh1UXAMu0I019NbBFWoBh4W1T856oyl2o",
           "short_id": "bbab5af2663db00a"
         },
-        "enabled": true,
         "server_name": "nl1.murhost.network"
       }
     },
@@ -589,12 +590,12 @@
           "enabled": true,
           "fingerprint": "android"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "rkRBWVPGbMdh1UXAMu0I019NbBFWoBh4W1T856oyl2o",
           "short_id": "bbab5af2663db00a"
         },
-        "enabled": true,
         "server_name": "nl2.murhost.network"
       }
     },
@@ -610,12 +611,12 @@
           "enabled": true,
           "fingerprint": "android"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "rkRBWVPGbMdh1UXAMu0I019NbBFWoBh4W1T856oyl2o",
           "short_id": "bbab5af2663db00a"
         },
-        "enabled": true,
         "server_name": "nl1.murhost.network"
       }
     },
@@ -631,12 +632,12 @@
           "enabled": true,
           "fingerprint": "android"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "rkRBWVPGbMdh1UXAMu0I019NbBFWoBh4W1T856oyl2o",
           "short_id": "bbab5af2663db00a"
         },
-        "enabled": true,
         "server_name": "nl2.murhost.network"
       }
     },
@@ -652,12 +653,12 @@
           "enabled": true,
           "fingerprint": "firefox"
         },
+        "enabled": true,
         "reality": {
           "enabled": true,
           "public_key": "PH97MWo9GJbJNzsqX5RXPoFs4KCNjcikYGn2aQXV1BA",
           "short_id": "59ff141b"
         },
-        "enabled": true,
         "server_name": "www.hkexpress.com"
       }
     },
