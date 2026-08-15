@@ -34,84 +34,93 @@
       "type": "socks",
       "tag": "hideme",
       "server": "185.195.71.218",
-      "server_port": 35871
+      "server_port": 44469
     },
     {
       "type": "urltest",
       "tag": "autosel",
       "outbounds": [
-        " By EbraSha \ud83c\udf10 #0",
-        " By EbraSha \ud83d\ude80 #1",
-        " By EbraSha \ud83d\udd2e #2",
-        " By EbraSha \u2699\ufe0f #3",
-        " By EbraSha \ud83d\udc09 #4",
-        " By EbraSha \ud83e\uddf2 #5",
-        " By EbraSha \ud83c\udf9b\ufe0f #6",
-        " By EbraSha \ud83d\udcdb #7",
-        " By EbraSha \ud83d\udd76\ufe0f #8",
-        " By EbraSha \u2660\ufe0f #9",
-        " By EbraSha \ud83e\uddca #10",
-        " By EbraSha \ud83c\udfaf #11",
-        " By EbraSha \ud83d\udd0b #12",
-        " By EbraSha \ud83c\udf00 #13",
-        " By EbraSha \ud83d\udd2e #14",
-        " By EbraSha \ud83e\uddec #15",
-        " By EbraSha \ud83d\udee1\ufe0f #16",
-        " By EbraSha \ud83d\udcc0 #17",
-        " By EbraSha \ud83d\udd77\ufe0f #18",
-        " By EbraSha \ud83d\udc09 #19",
-        " By EbraSha \ud83d\udcc0 #20",
-        " By EbraSha \ud83d\udd77\ufe0f #21",
-        " By EbraSha \ud83d\udea8 #22",
-        " By EbraSha \u2699\ufe0f #23",
-        " By EbraSha \ud83d\udee1\ufe0f #24",
-        " By EbraSha \ud83e\udd87 #25",
-        " By EbraSha \ud83d\udeac #26",
-        " By EbraSha \ud83c\udf0d #27",
-        " By EbraSha \u2694\ufe0f #28",
-        " By EbraSha \ud83e\ude90 #29",
-        " By EbraSha \ud83c\udf11 #30",
+        " By EbraSha \ud83c\udccf #0",
+        " By EbraSha \ud83e\udde9 #1",
+        " By EbraSha \ud83c\udf03 #2",
+        " By EbraSha \ud83d\udeac #3",
+        " By EbraSha \ud83d\udd0b #4",
+        " By EbraSha \u2660\ufe0f #5",
+        " By EbraSha \ud83d\udeac #6",
+        " By EbraSha \u26d3\ufe0f #7",
+        " By EbraSha \u2660\ufe0f #8",
+        " By EbraSha \ud83d\udedc #9",
+        " By EbraSha \u2694\ufe0f #10",
+        " By EbraSha \ud83c\udccf #11",
+        " By EbraSha \ud83d\udef0\ufe0f #12",
+        " By EbraSha \ud83e\ude96 #13",
+        " By EbraSha \ud83d\udcbb #14",
+        " By EbraSha \ud83e\udd16 #15",
+        " By EbraSha \u2663\ufe0f #16",
+        " By EbraSha \u2699\ufe0f #17",
+        " By EbraSha \u2663\ufe0f #18",
+        " By EbraSha \ud83e\udeac #19",
+        " By EbraSha \ud83d\udd0b #20",
+        " By EbraSha \ud83d\udda5\ufe0f #21",
+        " By EbraSha \ud83c\udf9b\ufe0f #22",
+        " By EbraSha \ud83e\udeac #23",
+        " By EbraSha \ud83e\udeac #24",
+        " By EbraSha \ud83c\udf03 #25",
+        " By EbraSha \ud83d\ude80 #26",
+        " By EbraSha \ud83e\udd85 #27",
+        " By EbraSha \ud83c\udf0c #28",
+        " By EbraSha \ud83d\udcf1 #29",
+        " By EbraSha \ud83c\udf00 #30",
         " By EbraSha \ud83d\udea8 #31",
-        " By EbraSha \ud83e\udd16 #32",
-        " By EbraSha \ud83d\uddff #33",
-        " By EbraSha \ud83e\uddf2 #34",
-        " By EbraSha \ud83d\udcf6 #35",
-        " By EbraSha \ud83e\ude96 #36",
-        " By EbraSha \ud83d\udd2e #37",
-        " By EbraSha \ud83c\udf03 #38",
-        " By EbraSha \ud83e\udd77 #39",
-        " By EbraSha \ud83d\udca3 #40",
-        " By EbraSha \ud83d\udea8 #41",
-        " By EbraSha \ud83d\udca3 #42",
-        " By EbraSha \ud83d\udc51 #43",
-        " By EbraSha \ud83e\udd85 #44",
-        " By EbraSha \u26d3\ufe0f #45",
-        " By EbraSha \ud83e\udd88 #46",
-        " By EbraSha \ud83d\udc51 #47",
-        " By EbraSha \ud83d\udc3a #48",
-        " By EbraSha \ud83e\uddca #49",
-        " By EbraSha \ud83c\udf9b\ufe0f #50",
-        " By EbraSha \ud83e\ude90 #51",
-        " By EbraSha \ud83e\uddec #52",
-        " By EbraSha \ud83d\udef0\ufe0f #53",
-        " By EbraSha \ud83d\udd0b #54",
-        " By EbraSha \ud83e\ude78 #55",
-        " By EbraSha \ud83d\udd25 #56",
-        " By EbraSha \ud83d\udedc #57",
-        " By EbraSha \ud83d\udef8 #58",
-        " By EbraSha \ud83c\udf2a\ufe0f #59",
-        " By EbraSha \ud83c\udf11 #60",
-        " By EbraSha \ud83d\udcfc #61",
-        " By EbraSha \ud83e\udd82 #62",
-        " By EbraSha \ud83e\uddea #63",
-        " By EbraSha \ud83d\udd76\ufe0f #64",
-        " By EbraSha \ud83d\udd79\ufe0f #65",
-        " By EbraSha \u2660\ufe0f #66",
-        " By EbraSha \ud83e\udd77 #67",
-        " By EbraSha \u2666\ufe0f #68",
-        " By EbraSha \ud83e\udd16 #69",
-        " By EbraSha \ud83d\udd2e #70",
-        " By EbraSha \ud83d\udd0c #71"
+        " By EbraSha \ud83e\uddca #32",
+        " By EbraSha \ud83d\udc7e #33",
+        " By EbraSha \ud83d\udcc0 #34",
+        " By EbraSha \ud83d\udcf1 #35",
+        " By EbraSha \ud83e\uddbe #36",
+        " By EbraSha \ud83c\udf00 #37",
+        " By EbraSha \ud83d\udcdf #38",
+        " By EbraSha \ud83e\udd82 #39",
+        " By EbraSha \ud83d\uddff #40",
+        " By EbraSha \ud83d\udd0c #41",
+        " By EbraSha \ud83d\udd0c #42",
+        " By EbraSha \u2663\ufe0f #43",
+        " By EbraSha \ud83d\udd0c #44",
+        " By EbraSha \ud83e\udeac #45",
+        " By EbraSha \ud83d\uddff #46",
+        " By EbraSha \ud83e\uddec #47",
+        " By EbraSha \ud83c\udf10 #48",
+        " By EbraSha \u2699\ufe0f #49",
+        " By EbraSha \u2694\ufe0f #50",
+        " By EbraSha \ud83d\udcc0 #51",
+        " By EbraSha \ud83e\udd82 #52",
+        " By EbraSha \u2699\ufe0f #53",
+        " By EbraSha \ud83e\udd85 #54",
+        " By EbraSha \ud83d\udcc0 #55",
+        " By EbraSha \ud83e\udeac #56",
+        " By EbraSha \ud83e\udd82 #57",
+        " By EbraSha \u26d3\ufe0f #58",
+        " By EbraSha \ud83d\udcdb #59",
+        " By EbraSha \ud83d\udd79\ufe0f #60",
+        " By EbraSha \ud83e\uddf2 #61",
+        " By EbraSha \ud83d\udcbb #62",
+        " By EbraSha \ud83d\udcc0 #63",
+        " By EbraSha \ud83e\ude78 #64",
+        " By EbraSha \ud83e\udd88 #65",
+        " By EbraSha \ud83d\uddff #66",
+        " By EbraSha \ud83d\udea8 #67",
+        " By EbraSha \ud83d\udcf1 #68",
+        " By EbraSha \ud83e\udd88 #69",
+        " By EbraSha \ud83d\udef8 #70",
+        " By EbraSha \ud83e\ude96 #71",
+        " By EbraSha \ud83e\udd77 #72",
+        " By EbraSha \ud83d\udea7 #73",
+        " By EbraSha \ud83e\ude78 #74",
+        " By EbraSha \ud83e\ude90 #75",
+        " By EbraSha \ud83d\udcbb #76",
+        " By EbraSha \ud83d\udd2e #77",
+        " By EbraSha \ud83c\udf9b\ufe0f #78",
+        " By EbraSha \u2660\ufe0f #79",
+        " By EbraSha \ud83d\udc09 #80"
       ],
       "url": "https://cp.cloudflare.com",
       "interval": "1m",
@@ -121,7 +130,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83c\udf10 #0",
+      "tag": " By EbraSha \ud83c\udccf #0",
       "server": "47.253.226.114",
       "server_port": 443,
       "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
@@ -141,7 +150,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\ude80 #1",
+      "tag": " By EbraSha \ud83e\udde9 #1",
       "server": "167.17.69.171",
       "server_port": 443,
       "uuid": "00144519-7e0d-476b-8d28-435576af9262",
@@ -162,7 +171,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udd2e #2",
+      "tag": " By EbraSha \ud83c\udf03 #2",
       "server": "31.58.50.200",
       "server_port": 8443,
       "uuid": "00dda8ac-c263-4106-a740-1e4478a7dc44",
@@ -182,7 +191,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \u2699\ufe0f #3",
+      "tag": " By EbraSha \ud83d\udeac #3",
       "server": "104.243.39.90",
       "server_port": 443,
       "uuid": "015b83b4-53a3-4719-8553-3a7c03c4128d",
@@ -203,7 +212,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udc09 #4",
+      "tag": " By EbraSha \ud83d\udd0b #4",
       "server": "2.26.128.77",
       "server_port": 443,
       "uuid": "015b83b4-53a3-4719-8553-3a7c03c4128d",
@@ -224,7 +233,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83e\uddf2 #5",
+      "tag": " By EbraSha \u2660\ufe0f #5",
       "server": "2.26.130.117",
       "server_port": 443,
       "uuid": "015b83b4-53a3-4719-8553-3a7c03c4128d",
@@ -245,7 +254,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83c\udf9b\ufe0f #6",
+      "tag": " By EbraSha \ud83d\udeac #6",
       "server": "2.26.135.192",
       "server_port": 443,
       "uuid": "015b83b4-53a3-4719-8553-3a7c03c4128d",
@@ -266,7 +275,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udcdb #7",
+      "tag": " By EbraSha \u26d3\ufe0f #7",
       "server": "163.5.153.153",
       "server_port": 443,
       "uuid": "0a76a766-d141-44b8-944e-dff757d7116f",
@@ -287,7 +296,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udd76\ufe0f #8",
+      "tag": " By EbraSha \u2660\ufe0f #8",
       "server": "185.79.138.71",
       "server_port": 448,
       "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
@@ -307,7 +316,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \u2660\ufe0f #9",
+      "tag": " By EbraSha \ud83d\udedc #9",
       "server": "185.155.97.241",
       "server_port": 443,
       "uuid": "0b9bcbc1-b289-4a64-86fa-a5b731b65384",
@@ -328,35 +337,15 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83e\uddca #10",
-      "server": "est.vrsvpn.com",
-      "server_port": 443,
-      "uuid": "0b9bcbc1-b289-4a64-86fa-a5b731b65384",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "SJkDT_L0eziQR2afDGrkN7-uRxjYu6bZxIGXlKeCvX4",
-          "short_id": "15aa18f971da1f81"
-        },
-        "server_name": "web.max.ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83c\udfaf #11",
+      "tag": " By EbraSha \u2694\ufe0f #10",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "0fbff144-bbed-44c0-972b-3ecb0d5579d6",
+      "flow": "",
       "tls": {
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "enabled": true,
         "reality": {
@@ -369,28 +358,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udd0b #12",
-      "server": "server.slavkiti.monster",
-      "server_port": 443,
-      "uuid": "13aef2e0-b3fb-4322-a0e9-c10b908ce6b5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "87f895f23064"
-        },
-        "server_name": "www.techradar.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83c\udf00 #13",
+      "tag": " By EbraSha \ud83c\udccf #11",
       "server": "159.89.87.21",
       "server_port": 28190,
       "uuid": "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e",
@@ -410,7 +378,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udd2e #14",
+      "tag": " By EbraSha \ud83d\udef0\ufe0f #12",
       "server": "staging.lastilhame.monster",
       "server_port": 443,
       "uuid": "106d20f6-d70a-40e2-b69b-8e82baf8d117",
@@ -431,7 +399,49 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83e\uddec #15",
+      "tag": " By EbraSha \ud83e\ude96 #13",
+      "server": "213.202.223.13",
+      "server_port": 443,
+      "uuid": "163c901d-495c-42df-b6c7-82260e7f4b0c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "Sk-lWpvoxFjjxCLLg5mWMXQzkGT65BsAxNIqs9POR2U",
+          "short_id": "0c2753c6d7aa5aea"
+        },
+        "server_name": "server.dega-it.de"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udcbb #14",
+      "server": "186.246.21.156",
+      "server_port": 40443,
+      "uuid": "17d29827-7cf1-4115-b40d-548e10ec355d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bjOGTQ4xsiFbyCPM_WzoK53L130rW5vZJtuYDJx_pkM",
+          "short_id": "aa3c"
+        },
+        "server_name": "deepl.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\udd16 #15",
       "server": "billing.netraidly.ru",
       "server_port": 40443,
       "uuid": "17d29827-7cf1-4115-b40d-548e10ec355d",
@@ -452,7 +462,28 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udee1\ufe0f #16",
+      "tag": " By EbraSha \u2663\ufe0f #16",
+      "server": "47.251.25.74",
+      "server_port": 443,
+      "uuid": "18805ff3-b420-45de-af18-93be14024ae8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8",
+          "short_id": ""
+        },
+        "server_name": "www.amazon.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \u2699\ufe0f #17",
       "server": "107.181.151.39",
       "server_port": 443,
       "uuid": "1896c6c9-a941-4688-a865-29027bf7f8e6",
@@ -473,7 +504,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udcc0 #17",
+      "tag": " By EbraSha \u2663\ufe0f #18",
       "server": "server.slavkiti.monster",
       "server_port": 443,
       "uuid": "1896c6c9-a941-4688-a865-29027bf7f8e6",
@@ -494,28 +525,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udd77\ufe0f #18",
-      "server": "124.156.182.132",
-      "server_port": 443,
-      "uuid": "1b6de5d8-3285-422c-b6fe-2989918f528b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "CdNLdccy_ALnjDvwZa14eP31CoJ_BLqJAS2OLCNwogg",
-          "short_id": "d19dcb524604e214"
-        },
-        "server_name": "www.apple.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83d\udc09 #19",
+      "tag": " By EbraSha \ud83e\udeac #19",
       "server": "nl.n.belka.network",
       "server_port": 443,
       "uuid": "1b7ee703-fa08-4305-8469-ae3e30e61e44",
@@ -523,7 +533,7 @@
       "tls": {
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "enabled": true,
         "reality": {
@@ -536,7 +546,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udcc0 #20",
+      "tag": " By EbraSha \ud83d\udd0b #20",
       "server": "194.150.166.12",
       "server_port": 443,
       "uuid": "1e973bda-3a02-4431-9df8-83595f6f65d8",
@@ -556,7 +566,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udd77\ufe0f #21",
+      "tag": " By EbraSha \ud83d\udda5\ufe0f #21",
       "server": "195.211.99.45",
       "server_port": 443,
       "uuid": "1f999bcd-f85e-47c3-afd7-92b6dd6b14b0",
@@ -577,31 +587,10 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udea8 #22",
-      "server": "15.237.122.88",
-      "server_port": 42287,
-      "uuid": "1fe3eba8-86ef-4bce-9fb4-c7517954b2e2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "TeQRou69R4O0YCR0b28I3PF97W9zc3Qf-zUvlOZA43M",
-          "short_id": "946e4c05cc69e1"
-        },
-        "server_name": "yahoo.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \u2699\ufe0f #23",
-      "server": "34.96.200.38",
+      "tag": " By EbraSha \ud83c\udf9b\ufe0f #22",
+      "server": "45.155.52.231",
       "server_port": 443,
-      "uuid": "2058418a-7718-4050-bdd5-db7487ffdb3b",
+      "uuid": "219f9fec-8983-4f6f-af8c-31bd0c6dbf19",
       "tls": {
         "utls": {
           "enabled": true,
@@ -610,57 +599,55 @@
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "uoXBNYcBgR-h2YmU1NFhFyASr6qh9UghWOuo1WZIikw",
-          "short_id": "17d824dd68e24aaf"
+          "public_key": "6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ",
+          "short_id": "0b"
         },
-        "server_name": "www.cloudflare.com"
+        "server_name": "ru2.skydrgn-online.online"
       }
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udee1\ufe0f #24",
-      "server": "95.85.247.7",
-      "server_port": 443,
-      "uuid": "218fd696-e3a2-4c33-b397-a5f13a82969e",
-      "flow": "",
+      "tag": " By EbraSha \ud83e\udeac #23",
+      "server": "13.125.242.186",
+      "server_port": 8686,
+      "uuid": "1a17b19d-4896-4531-af79-6e91d8ef8228",
       "tls": {
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "4-bYlfzBxbmfxZa5uFAobphk74V83FF5Y1lbo9l8RWQ",
-          "short_id": "50c30ab7"
+          "public_key": "A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw",
+          "short_id": "628b3c90c98ead4f"
         },
-        "server_name": "cats.abvphelp.cc"
+        "server_name": "www.apple.com"
       }
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83e\udd87 #25",
-      "server": "45.150.66.201",
-      "server_port": 443,
-      "uuid": "19ac8928-fe6e-49af-a223-9ca127e4018f",
-      "flow": "xtls-rprx-vision",
+      "tag": " By EbraSha \ud83e\udeac #24",
+      "server": "13.229.146.195",
+      "server_port": 8686,
+      "uuid": "1a17b19d-4896-4531-af79-6e91d8ef8228",
       "tls": {
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "CTduQ5Pvex1U2D1ojmFgSF4MQ1N7Yft7EfnEEBK1l1U",
-          "short_id": "c571c801812c"
+          "public_key": "A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw",
+          "short_id": "628b3c90c98ead4f"
         },
-        "server_name": "www.nvidia.com"
+        "server_name": "www.apple.com"
       }
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udeac #26",
+      "tag": " By EbraSha \ud83c\udf03 #25",
       "server": "de.ramcalshoping.ir",
       "server_port": 18020,
       "uuid": "224398db-7e90-421d-95be-178ec8c9d653",
@@ -681,7 +668,49 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83c\udf0d #27",
+      "tag": " By EbraSha \ud83d\ude80 #26",
+      "server": "tr2.ramcalshoping.ir",
+      "server_port": 18020,
+      "uuid": "224398db-7e90-421d-95be-178ec8c9d653",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "0xLgsE7IR5ewIl8gbBvO4199a9Av1_asmucL6V9u6nw",
+          "short_id": "e31e363bd206f49d"
+        },
+        "server_name": "play.google.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\udd85 #27",
+      "server": "201.51.1.11",
+      "server_port": 40443,
+      "uuid": "28d0edc6-93c9-4465-bac9-720274d8b8c4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg",
+          "short_id": "69d4"
+        },
+        "server_name": "deepl.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83c\udf0c #28",
       "server": "91.197.3.43",
       "server_port": 52463,
       "uuid": "22696950-587f-42c0-af24-c1ffab17d0cd",
@@ -701,69 +730,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \u2694\ufe0f #28",
-      "server": "201.51.1.11",
-      "server_port": 40443,
-      "uuid": "28d0edc6-93c9-4465-bac9-720274d8b8c4",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg",
-          "short_id": "69d4"
-        },
-        "server_name": "deepl.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83e\ude90 #29",
-      "server": "status.netraidly.ru",
-      "server_port": 40443,
-      "uuid": "28d0edc6-93c9-4465-bac9-720274d8b8c4",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg",
-          "short_id": "69d4"
-        },
-        "server_name": "deepl.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83c\udf11 #30",
-      "server": "176.108.240.105",
-      "server_port": 9893,
-      "uuid": "2a650f3b-d95b-4bd6-aadf-16ccc0717155",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "GVNhQWxHlpnqLnhlOeFpagU1QLVVHBepBQN0YcPjXVg"
-        },
-        "server_name": "io.ozone.ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83d\udea8 #31",
+      "tag": " By EbraSha \ud83d\udcf1 #29",
       "server": "178.83.226.55",
       "server_port": 443,
       "uuid": "2a77a470-315c-493d-b690-59b814a804cb",
@@ -783,27 +750,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83e\udd16 #32",
-      "server": "77.73.232.61",
-      "server_port": 19747,
-      "uuid": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM",
-          "short_id": "2001"
-        },
-        "server_name": "yahoo.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83d\uddff #33",
+      "tag": " By EbraSha \ud83c\udf00 #30",
       "server": "111.88.143.139",
       "server_port": 8443,
       "uuid": "2b8c0574-ff6f-4975-8a06-e24ebefa1d1c",
@@ -824,7 +771,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83e\uddf2 #34",
+      "tag": " By EbraSha \ud83d\udea8 #31",
       "server": "staging.lastilhame.monster",
       "server_port": 443,
       "uuid": "2ba7f500-017b-4891-87a0-e4e62a4ad52d",
@@ -845,52 +792,10 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udcf6 #35",
-      "server": "185.218.194.71",
-      "server_port": 443,
-      "uuid": "31216f81-3139-0021-bac4-646680314264",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
-          "short_id": "e1f8a3b6"
-        },
-        "server_name": "www.amd.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83e\ude96 #36",
-      "server": "82.118.18.202",
-      "server_port": 443,
-      "uuid": "316dda83-17f1-4f29-a05f-b84b7f991b82",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "HDiwGAN66V77CrlCWrDZupEiSQk204dkWRjJok0zYhk",
-          "short_id": "720148f2fea16d0f"
-        },
-        "server_name": "www.cloudflare.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83d\udd2e #37",
-      "server": "staging.lastilhame.monster",
-      "server_port": 443,
-      "uuid": "317bc783-340f-453c-afb5-b6bf637c0b23",
+      "tag": " By EbraSha \ud83e\uddca #32",
+      "server": "91.107.144.202",
+      "server_port": 18020,
+      "uuid": "224398db-7e90-421d-95be-178ec8c9d653",
       "flow": "xtls-rprx-vision",
       "tls": {
         "utls": {
@@ -900,98 +805,15 @@
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
-          "short_id": "fc994ae7eb10"
+          "public_key": "0xLgsE7IR5ewIl8gbBvO4199a9Av1_asmucL6V9u6nw",
+          "short_id": "e31e363bd206f49d"
         },
-        "server_name": "www.tradingview.com"
+        "server_name": "play.google.com"
       }
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83c\udf03 #38",
-      "server": "66.70.179.198",
-      "server_port": 2053,
-      "uuid": "339db138-41ff-44e9-a323-46da89fbf1a7",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "0KeXfLKnfTgIL7U-hSEn284rsECLiru0s0Rd11XzyzQ",
-          "short_id": "d823e50b944daee4"
-        },
-        "server_name": "www.apple.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83e\udd77 #39",
-      "server": "188.127.247.129",
-      "server_port": 443,
-      "uuid": "33aa2b47-484b-49f6-8f23-fb34602d221f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "Kb0rDCu2kKhfnC6bsi0DMRxDej9S-Mu1vVza1H1l4U4",
-          "short_id": "0c"
-        },
-        "server_name": "yahoo.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83d\udca3 #40",
-      "server": "italy.funvideorus.net",
-      "server_port": 443,
-      "uuid": "33c150b7-c0ca-4133-9a52-6f1207da9b8b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8",
-          "short_id": "15affa0af66dfc79"
-        },
-        "server_name": "deepl.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83d\udea8 #41",
-      "server": "95.85.224.51",
-      "server_port": 443,
-      "uuid": "342ab7e4-5a89-0001-8809-304120d4aa83",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
-          "short_id": "a696de84963656de"
-        },
-        "server_name": "max.ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83d\udca3 #42",
+      "tag": " By EbraSha \ud83d\udc7e #33",
       "server": "staging.lastilhame.monster",
       "server_port": 443,
       "uuid": "2f6e2b17-4d5e-4a12-8979-f53fdd347580",
@@ -1012,7 +834,49 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udc51 #43",
+      "tag": " By EbraSha \ud83d\udcc0 #34",
+      "server": "82.118.18.202",
+      "server_port": 443,
+      "uuid": "316dda83-17f1-4f29-a05f-b84b7f991b82",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "HDiwGAN66V77CrlCWrDZupEiSQk204dkWRjJok0zYhk",
+          "short_id": "720148f2fea16d0f"
+        },
+        "server_name": "www.cloudflare.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udcf1 #35",
+      "server": "staging.lastilhame.monster",
+      "server_port": 443,
+      "uuid": "317bc783-340f-453c-afb5-b6bf637c0b23",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
+          "short_id": "fc994ae7eb10"
+        },
+        "server_name": "www.tradingview.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\uddbe #36",
       "server": "lat.o4ka-internet.com",
       "server_port": 443,
       "uuid": "2cb6b4d9-0c74-45e2-a4fb-645bb8ac532a",
@@ -1033,7 +897,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83e\udd85 #44",
+      "tag": " By EbraSha \ud83c\udf00 #37",
       "server": "nl6.o4ka-internet.com",
       "server_port": 443,
       "uuid": "2cb6b4d9-0c74-45e2-a4fb-645bb8ac532a",
@@ -1054,7 +918,27 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \u26d3\ufe0f #45",
+      "tag": " By EbraSha \ud83d\udcdf #38",
+      "server": "66.70.179.198",
+      "server_port": 2053,
+      "uuid": "339db138-41ff-44e9-a323-46da89fbf1a7",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "0KeXfLKnfTgIL7U-hSEn284rsECLiru0s0Rd11XzyzQ",
+          "short_id": "d823e50b944daee4"
+        },
+        "server_name": "www.apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\udd82 #39",
       "server": "193.233.126.82",
       "server_port": 9443,
       "uuid": "37a098ab-8fec-4352-8ee8-294ae5bca68f",
@@ -1062,7 +946,7 @@
       "tls": {
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "enabled": true,
         "reality": {
@@ -1075,10 +959,52 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83e\udd88 #46",
-      "server": "69.63.215.138",
-      "server_port": 50159,
-      "uuid": "382a883d-aff1-4850-9c54-bca118f59e5a",
+      "tag": " By EbraSha \ud83d\uddff #40",
+      "server": "85.155.226.144",
+      "server_port": 443,
+      "uuid": "39c42b0a-b823-4c93-bb99-74b4183e518d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs",
+          "short_id": "82f5d3a1e9c0b661"
+        },
+        "server_name": "getsavesafe.net"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udd0c #41",
+      "server": "85.155.226.149",
+      "server_port": 443,
+      "uuid": "39c42b0a-b823-4c93-bb99-74b4183e518d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs",
+          "short_id": "82f5d3a1e9c0b661"
+        },
+        "server_name": "getsavesafe.net"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udd0c #42",
+      "server": "188.127.247.129",
+      "server_port": 443,
+      "uuid": "33aa2b47-484b-49f6-8f23-fb34602d221f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "utls": {
@@ -1088,99 +1014,99 @@
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "FIfvMYBmBPgASKrykRrkVOld-45nTrKpY7T8ijiyuSE",
-          "short_id": "eb281e128c41c864"
+          "public_key": "Kb0rDCu2kKhfnC6bsi0DMRxDej9S-Mu1vVza1H1l4U4",
+          "short_id": "0c"
+        },
+        "server_name": "yahoo.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \u2663\ufe0f #43",
+      "server": "85.155.226.30",
+      "server_port": 443,
+      "uuid": "39c42b0a-b823-4c93-bb99-74b4183e518d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs",
+          "short_id": "82f5d3a1e9c0b661"
+        },
+        "server_name": "getsavesafe.net"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udd0c #44",
+      "server": "85.155.226.69",
+      "server_port": 443,
+      "uuid": "39c42b0a-b823-4c93-bb99-74b4183e518d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs",
+          "short_id": "82f5d3a1e9c0b661"
+        },
+        "server_name": "getsavesafe.net"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\udeac #45",
+      "server": "45.91.52.125",
+      "server_port": 443,
+      "uuid": "3ab2615c-689d-463b-8990-a95013894348",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "8bkjYMx4EXdRTHTgQ6wMaeyGl-HfskzixE0Is-kMQXU",
+          "short_id": "e3c60a1b71b462fa"
         },
         "server_name": "www.cloudflare.com"
       }
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udc51 #47",
-      "server": "85.155.226.113",
+      "tag": " By EbraSha \ud83d\uddff #46",
+      "server": "95.85.224.51",
       "server_port": 443,
-      "uuid": "39c42b0a-b823-4c93-bb99-74b4183e518d",
+      "uuid": "342ab7e4-5a89-0001-8809-304120d4aa83",
       "flow": "xtls-rprx-vision",
       "tls": {
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs",
-          "short_id": "82f5d3a1e9c0b661"
+          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
+          "short_id": "a696de84963656de"
         },
-        "server_name": "getsavesafe.net"
+        "server_name": "max.ru"
       }
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udc3a #48",
-      "server": "85.155.226.132",
-      "server_port": 443,
-      "uuid": "39c42b0a-b823-4c93-bb99-74b4183e518d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs",
-          "short_id": "82f5d3a1e9c0b661"
-        },
-        "server_name": "getsavesafe.net"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83e\uddca #49",
-      "server": "85.155.226.140",
-      "server_port": 443,
-      "uuid": "39c42b0a-b823-4c93-bb99-74b4183e518d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs",
-          "short_id": "82f5d3a1e9c0b661"
-        },
-        "server_name": "getsavesafe.net"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83c\udf9b\ufe0f #50",
-      "server": "85.155.226.6",
-      "server_port": 443,
-      "uuid": "39c42b0a-b823-4c93-bb99-74b4183e518d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs",
-          "short_id": "82f5d3a1e9c0b661"
-        },
-        "server_name": "getsavesafe.net"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83e\ude90 #51",
+      "tag": " By EbraSha \ud83e\uddec #47",
       "server": "193.238.153.15",
       "server_port": 443,
       "uuid": "40cfbd0a-f133-4174-8e03-ab0e587e1099",
@@ -1201,7 +1127,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83e\uddec #52",
+      "tag": " By EbraSha \ud83c\udf10 #48",
       "server": "144.124.246.55",
       "server_port": 443,
       "uuid": "40de6299-d792-4868-8a82-411ead0aa943",
@@ -1209,7 +1135,7 @@
       "tls": {
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "enabled": true,
         "reality": {
@@ -1222,7 +1148,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udef0\ufe0f #53",
+      "tag": " By EbraSha \u2699\ufe0f #49",
       "server": "144.124.248.186",
       "server_port": 443,
       "uuid": "40de6299-d792-4868-8a82-411ead0aa943",
@@ -1243,7 +1169,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udd0b #54",
+      "tag": " By EbraSha \u2694\ufe0f #50",
       "server": "144.124.249.252",
       "server_port": 443,
       "uuid": "40de6299-d792-4868-8a82-411ead0aa943",
@@ -1264,7 +1190,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83e\ude78 #55",
+      "tag": " By EbraSha \ud83d\udcc0 #51",
       "server": "nl.go-vpn.club",
       "server_port": 443,
       "uuid": "40de6299-d792-4868-8a82-411ead0aa943",
@@ -1285,10 +1211,240 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udd25 #56",
-      "server": "204.48.20.223",
-      "server_port": 30906,
-      "uuid": "43a13764-23dd-4e01-8b79-cde8a16e13ce",
+      "tag": " By EbraSha \ud83e\udd82 #52",
+      "server": "194.226.169.36",
+      "server_port": 443,
+      "uuid": "4706d9c3-eec0-4666-9d84-e608a200e872",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk",
+          "short_id": "b8aa"
+        },
+        "server_name": "yahoo.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \u2699\ufe0f #53",
+      "server": "194.87.133.25",
+      "server_port": 443,
+      "uuid": "47e144de-9fb2-47da-9a1b-c8f78df22e99",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "i6uqYKE5251RNqvVQofY5wUxkTokzxYz6m5g2ke9iT0",
+          "short_id": "f8c21d6b3a9e7054"
+        },
+        "server_name": "github.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\udd85 #54",
+      "server": "15.204.97.195",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        },
+        "server_name": "fuck.rkn"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udcc0 #55",
+      "server": "15.204.97.198",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        },
+        "server_name": "fuck.rkn"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\udeac #56",
+      "server": "15.204.97.206",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        },
+        "server_name": "fuck.rkn"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\udd82 #57",
+      "server": "15.204.97.214",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        },
+        "server_name": "fuck.rkn"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \u26d3\ufe0f #58",
+      "server": "15.204.97.216",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        },
+        "server_name": "fuck.rkn"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udcdb #59",
+      "server": "15.204.97.219",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        },
+        "server_name": "fuck.rkn"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udd79\ufe0f #60",
+      "server": "51.158.206.103",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        },
+        "server_name": "fuck.rkn"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\uddf2 #61",
+      "server": "51.158.206.12",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        },
+        "server_name": "fuck.rkn"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udcbb #62",
+      "server": "51.158.206.19",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        },
+        "server_name": "fuck.rkn"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udcc0 #63",
+      "server": "51.158.206.20",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "utls": {
           "enabled": true,
@@ -1297,15 +1453,99 @@
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "HnQ_s7eu3XUu6upzLoe0jj5ZgsYvM7KXuMG41IwN4R0",
-          "short_id": "17a94dc584e3"
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
         },
-        "server_name": "www.cloudflare.com"
+        "server_name": "fuck.rkn"
       }
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udedc #57",
+      "tag": " By EbraSha \ud83e\ude78 #64",
+      "server": "51.158.206.25",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        },
+        "server_name": "fuck.rkn"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\udd88 #65",
+      "server": "51.158.206.26",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        },
+        "server_name": "fuck.rkn"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\uddff #66",
+      "server": "51.158.206.29",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        },
+        "server_name": "fuck.rkn"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udea8 #67",
+      "server": "51.158.206.34",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        },
+        "server_name": "fuck.rkn"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udcf1 #68",
       "server": "51.158.206.80",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -1326,7 +1566,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udef8 #58",
+      "tag": " By EbraSha \ud83e\udd88 #69",
       "server": "51.158.206.86",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -1347,7 +1587,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83c\udf2a\ufe0f #59",
+      "tag": " By EbraSha \ud83d\udef8 #70",
       "server": "51.158.206.87",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -1368,7 +1608,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83c\udf11 #60",
+      "tag": " By EbraSha \ud83e\ude96 #71",
       "server": "51.158.206.8",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -1389,7 +1629,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udcfc #61",
+      "tag": " By EbraSha \ud83e\udd77 #72",
       "server": "51.158.206.93",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -1410,7 +1650,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83e\udd82 #62",
+      "tag": " By EbraSha \ud83d\udea7 #73",
       "server": "51.158.206.96",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -1431,7 +1671,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83e\uddea #63",
+      "tag": " By EbraSha \ud83e\ude78 #74",
       "server": "51.158.206.97",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -1452,7 +1692,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udd76\ufe0f #64",
+      "tag": " By EbraSha \ud83e\ude90 #75",
       "server": "51.158.206.98",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -1473,7 +1713,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83d\udd79\ufe0f #65",
+      "tag": " By EbraSha \ud83d\udcbb #76",
       "server": "62.210.91.10",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -1481,7 +1721,7 @@
       "tls": {
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "enabled": true,
         "reality": {
@@ -1494,11 +1734,10 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \u2660\ufe0f #66",
-      "server": "62.210.91.2",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
+      "tag": " By EbraSha \ud83d\udd2e #77",
+      "server": "83.222.23.81",
+      "server_port": 38065,
+      "uuid": "4b9063e0-3288-44e9-9aac-80fbfce323a0",
       "tls": {
         "utls": {
           "enabled": true,
@@ -1507,15 +1746,15 @@
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
+          "public_key": "dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo",
+          "short_id": "fa"
         },
-        "server_name": "fuck.rkn"
+        "server_name": "yahoo.com"
       }
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83e\udd77 #67",
+      "tag": " By EbraSha \ud83c\udf9b\ufe0f #78",
       "server": "server.slavkiti.monster",
       "server_port": 443,
       "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
@@ -1536,7 +1775,7 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \u2666\ufe0f #68",
+      "tag": " By EbraSha \u2660\ufe0f #79",
       "server": "89.124.116.234",
       "server_port": 443,
       "uuid": "4d5fea10-c669-4cb9-91b2-9d179b844520",
@@ -1557,8 +1796,8 @@
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \ud83e\udd16 #69",
-      "server": "31.77.196.201",
+      "tag": " By EbraSha \ud83d\udc09 #80",
+      "server": "gr1.levikogjgfdd.ir",
       "server_port": 443,
       "uuid": "4e7eb9d5-022a-4b0a-ba37-2d1be458947b",
       "flow": "xtls-rprx-vision",
@@ -1572,48 +1811,6 @@
           "enabled": true,
           "public_key": "YkcQyTOh9YpZmilRob-eVxwoo4uwBAa9oHmURMTFzEM",
           "short_id": "a7"
-        },
-        "server_name": "www.cloudflare.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83d\udd2e #70",
-      "server": "5.253.30.99",
-      "server_port": 40443,
-      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
-          "short_id": "88b6"
-        },
-        "server_name": "deepl.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83d\udd0c #71",
-      "server": "195.211.98.214",
-      "server_port": 443,
-      "uuid": "522fdbb0-61a9-4779-bcc9-ebae85978685",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "1GEimhTv11Oyp85VBhiJ77ytOsmb3O6On8O7jkdH0EE",
-          "short_id": "62bae2f417e00f89"
         },
         "server_name": "www.cloudflare.com"
       }
