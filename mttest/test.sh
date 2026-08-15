@@ -19,7 +19,7 @@ wait ${pidar[@]}
 
 for res_file in $TMP/results_id*; do
   read -r speed id url <$res_file
-  if [ "$speed" -gt 10000 ]; then
+  if [ "$speed" -gt 10 ]; then
     echo $speed $url
   fi
   rm $res_file

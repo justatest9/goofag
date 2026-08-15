@@ -16,8 +16,9 @@ def kill_dupes(olist):
     for o in olist:
         dup_found = False
         for rs in reslist:
+            name_key = 'uuid' if 'uuid' in o.keys() else 'password'
             if o['server'] == rs['server'] and o['server_port'] == rs['server_port'] and \
-                o['uuid'] == rs['uuid']:
+                o[name_key] == rs[name_key]:
                 # this is dup
                 dup_found = True
                 break

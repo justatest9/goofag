@@ -30,13 +30,13 @@ def validate_singbox_config(outbnd):
         return True
     return False
 
-def parseline(line):
-    u = yarl.URL(line)
-    
-    # making singbox vless outbound array
+def parseline_vless(url):
+
+    u = url
+     # making singbox vless outbound array
     vless_outbound = {}
     vless_outbound['type'] = 'vless'
-    vless_outbound['tag'] = urllib.parse.unquote(line.split('#')[1])
+    vless_outbound['tag'] = u.fragment
     vless_outbound['server'] = u.host 
     vless_outbound['server_port'] = u.port
     vless_outbound['uuid'] = u.user
@@ -44,7 +44,6 @@ def parseline(line):
     subs(vless_outbound, 'flow', u.query, 'flow')
     #subs(vless_outbound, 'packet_encoding', u.query, 'packetEncoding')
 
-    
     tls = {}
     utls = {}
     reality = {}
@@ -70,8 +69,56 @@ def parseline(line):
         tls['enabled'] = True
         if 'sni' in u.query.keys(): tls['server_name'] = u.query['sni'] 
     
-    if validate_singbox_config(vless_outbound):
-        return vless_outbound
+    return vless_outbound
+
+def parseline_hysteria2(url):
+    
+    hyst_outbound = {}
+    hyst_outbound['type'] = 'hysteria2'
+    hyst_outbound['tag'] = url.fragment
+    hyst_outbound['server'] = url.host 
+    hyst_outbound['server_port'] = url.port
+    hyst_outbound['password'] = url.user
+    
+    hyst_outbound['up_mbps'] = 20
+    hyst_outbound['down_mbps'] = 20
+
+    tls = {}
+    utls = {}
+    obfs = {}
+    tls['enabled'] = True
+    
+    subs(tls, 'server_name', url.query, 'sni')
+    
+    if 'insecure' in url.query.keys():
+        insec = url.query['insecure']
+        tls['insecure'] = bool(insec)
+    
+    if 'obfs' in url.query.keys():
+        obfs['type'] = url.query['obfs']
+        obfs['password'] = url.query['obfs-password']
+    
+    if 'fp' in url.query.keys():
+        tls['utls'] = utls
+        utls['enabled'] = True
+        utls['fingerprint'] = url.query['fp']
+
+    hyst_outbound['tls'] = tls
+    hyst_outbound['obfs'] = obfs
+    return hyst_outbound
+
+def parseline(line):
+    u = yarl.URL(line)
+    
+    if(u.scheme == 'vless'):
+        outbound = parseline_vless(u)
+    elif(u.scheme == 'hysteria2'):
+        outbound = parseline_hysteria2(u)
+    else:
+        return {}
+
+    if validate_singbox_config(outbound):
+        return outbound
     return {}
 
 def subs(ard, keyd, ars, keys):
@@ -87,8 +134,8 @@ def main():
     if argc>2: 
         lport = int(argv[2])
     
-    vless_outbound = parseline(argv[1])
-    vless_outbound['tag'] = 'proxy'
+    sing_outbound = parseline(argv[1])
+    sing_outbound['tag'] = 'proxy'
 
     local_inbound = {}
     local_inbound['type'] = 'socks'
@@ -97,7 +144,7 @@ def main():
     local_inbound['listen_port'] = lport
 
     config = {}
-    config['outbounds'] = [vless_outbound]
+    config['outbounds'] = [sing_outbound]
     config['inbounds'] = [local_inbound]
     route = {}
     rules = []
