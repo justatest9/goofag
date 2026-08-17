@@ -16,7 +16,7 @@ grep . $TMP/BLACK_VLESS_RUS_base64_dec.txt | grep -iv 'united.*states' | grep -i
 #grep reality $TMP/BLACK_VLESS_RUS_base64_dec.txt | grep -iv 'united.*states' | grep -iv russia >$TMP/BLACK_VLESS.txt
 
 #bash ebrasha_autosel.sh
-#bash ebr_auto_hyst.sh
+bash ebr_auto_hyst.sh
 
 echo $PTH
 #cat $TMP/BLACK_VLESS.txt | python $PTH/make_url_outbounds.py | python append_to_singbox_config.py >$PTH/singbox1.json
