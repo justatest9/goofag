@@ -52,7 +52,7 @@ def main():
     urltest_o['url'] = 'https://cp.cloudflare.com'
     urltest_o['interval'] = '60m'
     urltest_o['tolerance'] = 200
-    urltest_o['idle_timeout'] = '30m'
+    urltest_o['idle_timeout'] = '60m'
     urltest_o['interrupt_exist_connections'] = False
     outbounds = [urltest_o] + outbounds
     
