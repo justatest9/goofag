@@ -81,7 +81,7 @@ cfg ='''
 '''
 def get_hideme_addr_port():
     # adding hideme from sub64.txt 
-    fl = open("sub64.txt")
+    fl = open("exhaust/sub64.txt")
     line = base64.b64decode (fl.read())   
     u = yarl.URL(line.decode())
 

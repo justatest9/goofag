@@ -10,6 +10,7 @@ ID=0
 pidar=()
 
 while read -r line; do
+  if [[ -z $line ]]; then continue; fi
   echo $line | bash $PTH/thread.sh $ID &
   ID=$(($ID + 1))
   pidar+=($!)
@@ -19,7 +20,7 @@ wait ${pidar[@]}
 
 for res_file in $TMP/results_id*; do
   read -r speed id url <$res_file
-  if [ "$speed" -gt 10 ]; then
+  if [ "$speed" -gt 10000 ]; then
     echo $speed $url
   fi
   rm $res_file

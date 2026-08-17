@@ -16,8 +16,11 @@ grep . $TMP/BLACK_VLESS_RUS_base64_dec.txt | grep -iv 'united.*states' | grep -i
 #grep reality $TMP/BLACK_VLESS_RUS_base64_dec.txt | grep -iv 'united.*states' | grep -iv russia >$TMP/BLACK_VLESS.txt
 
 #bash ebrasha_autosel.sh
-bash ebr_auto_hyst.sh
+#bash ebr_auto_hyst.sh
 
 echo $PTH
-cat $TMP/BLACK_VLESS.txt | python $PTH/make_url_outbounds.py | python append_to_singbox_config.py >$PTH/singbox1.json
-cat $TMP/TESTED_EBA_HYST_CUT.txt | python $PTH/make_url_outbounds.py | python append_to_singbox_config.py >$PTH/singbox2.json
+#cat $TMP/BLACK_VLESS.txt | python $PTH/make_url_outbounds.py | python append_to_singbox_config.py >$PTH/singbox1.json
+#cat $TMP/TESTED_EBA_HYST_CUT.txt | python $PTH/make_url_outbounds.py | python append_to_singbox_config.py >$PTH/singbox2.json
+
+# for now just take fixed list and prepare config
+cat exhaust/fixed_list.txt | python $PTH/make_url_outbounds.py | python append_to_singbox_config.py >$PTH/singbox1.json

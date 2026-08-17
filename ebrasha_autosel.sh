@@ -5,7 +5,7 @@ TMP=/tmp/singtest
 
 mkdir -p $TMP
 
-TOTAL_CHUNKS=10
+TOTAL_CHUNKS=30
 CURPT=$(pwd)
 
 cd $TMP
@@ -26,4 +26,4 @@ done
 #cat $TMP/BLACK_VLESS_RUS_base64_dec.txt | grep -iv 'united.*states'  > $TMP/BLACK_VLESS.txt
 
 echo $PTH
-cat $TMP/TESTED_EBA.txt | cut -d \  -f 2- >$TMP/TESTED_EBA_CUT.txt
+cat $TMP/TESTED_EBA.txt | sort -r -n | cut -d \  -f 2- >$TMP/TESTED_EBA_CUT.txt
