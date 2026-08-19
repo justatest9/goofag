@@ -49,7 +49,8 @@ def main():
     urltest_o['tag'] ='autosel'
     urltest_o['outbounds'] = [i['tag'] for i in outbounds]
 
-    urltest_o['url'] = 'https://cp.cloudflare.com'
+    #urltest_o['url'] = 'https://cp.cloudflare.com'
+    urltest_o['url'] = 'https://api.telegram.org'
     urltest_o['interval'] = '60m'
     urltest_o['tolerance'] = 200
     urltest_o['idle_timeout'] = '60m'
