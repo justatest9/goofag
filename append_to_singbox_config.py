@@ -26,6 +26,7 @@ cfg ='''
     {
         "type": "tun",
         "tag": "tun-in",
+        "mtu": 1400,
         "address": "172.19.0.1/30",
         "stack": "gvisor",
         "auto_route": true,
