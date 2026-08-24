@@ -13,6 +13,11 @@ cfg ='''
             "external_controller": "127.0.0.1:9090"
         }
     },
+    "log": {
+        "level": "debug",
+        "timestamp": true,
+        "output": "/sdcard/Download/sing_box_debug.txt"
+    },
     "dns": {
         "servers": [
         {
