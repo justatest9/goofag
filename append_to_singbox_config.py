@@ -13,11 +13,6 @@ cfg ='''
             "external_controller": "127.0.0.1:9090"
         }
     },
-    "log": {
-        "level": "debug",
-        "timestamp": true,
-        "output": "/sdcard/Download/sing_box_debug.txt"
-    },
     "dns": {
         "servers": [
         {
@@ -31,7 +26,7 @@ cfg ='''
     {
         "type": "tun",
         "tag": "tun-in",
-        "mtu": 1400,
+        "mtu": 1280,
         "address": "172.19.0.1/30",
         "stack": "gvisor",
         "auto_route": true,
