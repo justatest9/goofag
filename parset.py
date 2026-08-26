@@ -96,6 +96,9 @@ def parseline_hysteria2(url):
     
     if 'obfs' in url.query.keys():
         obfs['type'] = url.query['obfs']
+        obfs['password'] = ''
+            
+    if 'obfs-password' in url.query.keys():
         obfs['password'] = url.query['obfs-password']
     
     if 'fp' in url.query.keys():
