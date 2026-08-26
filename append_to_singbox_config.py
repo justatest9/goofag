@@ -14,13 +14,22 @@ cfg ='''
         }
     },
     "dns": {
+        "strategy": "ipv4_only",
         "servers": [
         {
-            "tag": "local-dns",
+            "tag": "doh",
             "type": "https",
-            "server": "1.1.1.1"
+            "server": "1.1.1.1",
+            "server_port": 443,
+            "path": "/dns-query",
+            "tls": {
+                "enabled": true,
+                "server_name": "cloudflare-dns.com"
+            },
+            "detour": "direct"
         }
-        ]
+        ],
+        "final": "doh"
     },
     "inbounds" : [
     {
@@ -54,6 +63,13 @@ cfg ='''
             {
                 "port": 53,
                 "action": "hijack-dns"
+            },
+            {
+                "package_name" : [
+                    "ru.oneme.app",
+                    "ru.ozon.app.android"
+                ],
+                "outbound": "direct"
             },
             {
                 "domain_suffix": ["ru", "su", "yandex.com", "yandex.net", ".xn--p1ai"],
