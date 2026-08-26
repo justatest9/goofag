@@ -25,7 +25,7 @@ cfg ='''
             "tls": {
                 "enabled": true,
                 "server_name": "cloudflare-dns.com"
-            },
+            }
         }
         ],
         "final": "doh"
