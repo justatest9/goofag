@@ -26,7 +26,6 @@ cfg ='''
                 "enabled": true,
                 "server_name": "cloudflare-dns.com"
             },
-            "detour": "direct"
         }
         ],
         "final": "doh"
