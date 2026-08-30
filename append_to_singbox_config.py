@@ -38,7 +38,7 @@ cfg ='''
         "address": "172.19.0.1/30",
         "stack": "gvisor",
         "auto_route": true,
-        "strict_route": true,
+        "strict_route": true
     }
     ],
     "outbounds": [
