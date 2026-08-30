@@ -60,6 +60,11 @@ cfg ='''
             {
                 "action": "sniff"
             },
+            { 
+                "network": "udp", 
+                "action": "route-options", 
+                "udp_timeout": "120s" 
+            },
             {
                 "port": 53,
                 "action": "hijack-dns"
