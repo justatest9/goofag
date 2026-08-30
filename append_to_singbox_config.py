@@ -38,7 +38,8 @@ cfg ='''
         "address": "172.19.0.1/30",
         "stack": "gvisor",
         "auto_route": true,
-        "exclude_package": ["io.nekohasekai.sfa"]
+        "strict_route": true,
+        "exclude_package": ["io.nekohasekai.sf1a"]
     }
     ],
     "outbounds": [
@@ -55,6 +56,7 @@ cfg ='''
     ],
     "route": {
         "final": "autosel",
+        "auto_detect_interface": true,
         "rules":[
             {
                 "action": "sniff"
