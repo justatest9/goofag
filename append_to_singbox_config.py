@@ -39,7 +39,6 @@ cfg ='''
         "stack": "gvisor",
         "auto_route": true,
         "strict_route": true,
-        "exclude_package": ["io.nekohasekai.sf1a"]
     }
     ],
     "outbounds": [
