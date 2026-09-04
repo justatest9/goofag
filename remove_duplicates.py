@@ -1,6 +1,8 @@
 import yarl
 import sys 
 
+# remove duplicates from v2ray list
+
 g_array = []
 
 def find_url_in_arr(url):
