@@ -80,8 +80,9 @@ def parseline_hysteria2(url):
     hyst_outbound['server_port'] = url.port
     hyst_outbound['password'] = url.user
     
-    hyst_outbound['up_mbps'] = 20
-    hyst_outbound['down_mbps'] = 20
+    #hyst_outbound['up_mbps'] = 20
+    #hyst_outbound['down_mbps'] = 20
+    #hyst_outbound['ignore_client_bandwidth'] = True
 
     tls = {}
     utls = {}
@@ -127,6 +128,21 @@ def parseline(line):
 def subs(ard, keyd, ars, keys):
     if keys in ars.keys(): ard[keyd] = ars[keys]
 
+# returns [outbound, inbound]
+def process_line(line, port):
+
+    sing_outbound = parseline(line)
+    if sing_outbound != {}:
+        sing_outbound['tag'] = 'proxy' + str(port)
+    
+    local_inbound = {}
+    local_inbound['type'] = 'socks'
+    local_inbound['tag'] = 'in' + str(port)
+    local_inbound['listen'] = '127.0.0.1'
+    local_inbound['listen_port'] = port
+
+    return sing_outbound, local_inbound
+
 # dumps singbox testing config to stdout
 # $1  - port
 def main():
@@ -134,29 +150,32 @@ def main():
     argc = len(sys.argv)
     argv = sys.argv
     lport = 1085 
-    if argc>2: 
-        lport = int(argv[2])
-    
-    sing_outbound = parseline(argv[1])
-    sing_outbound['tag'] = 'proxy'
-
-    local_inbound = {}
-    local_inbound['type'] = 'socks'
-    local_inbound['tag'] = 'in'
-    local_inbound['listen'] = '127.0.0.1'
-    local_inbound['listen_port'] = lport
+    if argc>1: 
+        lport = int(argv[1])
 
     config = {}
-    config['outbounds'] = [sing_outbound]
-    config['inbounds'] = [local_inbound]
-    route = {}
+    config['outbounds'] = []
+    config['inbounds'] = []
     rules = []
+    fport = lport
+    for line in sys.stdin:
+        sing_outbound, local_inbound = process_line(line, fport)
+        if sing_outbound == {}: continue
+
+        config['outbounds'].append(sing_outbound)
+        config['inbounds'].append(local_inbound)
+        rule = {}
+        rule['inbound'] = 'in' + str(fport)
+        rule['outbound'] = 'proxy' + str(fport)
+        rules.append(rule)
+        fport += 1
+
+    route = {}
     config['route'] = route
     route['rules'] = rules
-    rule = {}
-    rule['inbound'] = 'in'
-    rule['outbound'] = 'proxy'
-    rules.append(rule)
+
+    if len(config['outbounds']) == 0:
+        config = {}
 
     dmp = json.dumps(config, indent=2)   
 
