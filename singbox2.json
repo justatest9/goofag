@@ -29,7 +29,11 @@
       "address": "172.19.0.1/30",
       "stack": "gvisor",
       "auto_route": true,
-      "strict_route": true
+      "strict_route": true,
+      "route_exclude_address": [
+        "192.168.0.0/16",
+        "10.0.0.0/8"
+      ]
     }
   ],
   "outbounds": [
@@ -41,33 +45,15 @@
       "type": "socks",
       "tag": "hideme",
       "server": "185.195.71.218",
-      "server_port": 33669
+      "server_port": 41165
     },
     {
       "type": "urltest",
       "tag": "autosel",
       "outbounds": [
-        " By EbraSha \ud83e\udd77 #0",
-        "\ud83c\uddeb\ud83c\uddee Finland, Helsinki | [BL] #1",
-        "\ud83c\uddeb\ud83c\uddee Finland, Helsinki | \ud83c\udf10 | [BL] #2",
-        "\ud83c\udde9\ud83c\uddea Germany, Frankfurt am Main | [BL] #3",
-        "\ud83c\udde6\ud83c\uddf9 Austria, Vienna | [BL] #4",
-        "\ud83c\udded\ud83c\uddf0 Hong Kong, Hong Kong | [BL] #5",
-        "\ud83c\uddf3\ud83c\uddf4 Norway, Sandefjord | [BL] #6",
-        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #7",
-        "\ud83c\uddfa\ud83c\uddf8 United States, Buffalo | [BL] #8",
-        "\ud83c\uddfa\ud83c\uddf8 United States, Los Angeles | [BL] #9",
-        "\ud83c\uddfa\ud83c\uddf8 United States, Los Angeles | [BL] #10",
-        "\ud83c\uddfa\ud83c\uddf8 United States, Los Angeles | [BL] #11",
-        "\ud83c\uddea\ud83c\uddea Estonia, Tallinn | [BL] #12",
-        " By EbraSha \ud83d\uddff #13",
-        " By EbraSha \ud83e\udd85 #14",
-        " By EbraSha \ud83e\udd87 #15",
-        " By EbraSha \ud83d\udd0b #16",
-        " By EbraSha \ud83d\udc8e #17",
-        " By EbraSha \ud83e\uddf2 #18",
-        " By EbraSha \ud83c\udf03 #19",
-        " By EbraSha \ud83c\udf9b\ufe0f #20"
+        " By EbraSha \ud83e\udde8 #0",
+        " By EbraSha \ud83d\uddff #1",
+        " By EbraSha \u2660\ufe0f #2"
       ],
       "url": "https://api.telegram.org",
       "interval": "60m",
@@ -76,419 +62,50 @@
       "interrupt_exist_connections": false
     },
     {
-      "type": "vless",
-      "tag": " By EbraSha \ud83e\udd77 #0",
-      "server": "185.79.138.71",
-      "server_port": 448,
-      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-          "short_id": "cd21e552537c7c0b"
-        },
-        "server_name": "www.samsung.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "\ud83c\uddeb\ud83c\uddee Finland, Helsinki | [BL] #1",
-      "server": "fi-3.kihsuyhf8jkiugsxb.cfd",
+      "type": "hysteria2",
+      "tag": " By EbraSha \ud83e\udde8 #0",
+      "server": "de1.sferavpn.pro",
       "server_port": 443,
-      "uuid": "0dc1fc26-b8e9-4296-9870-0996de3c2333",
-      "flow": "xtls-rprx-vision",
+      "password": "cd74c0a406664a5bc0bac098220a2468",
       "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
         "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "5uHKkPdbRraYHj7x22un0DdY9IsnSc7TnLyJ72qyDWw"
-        },
-        "server_name": "fi-3.kihsuyhf8jkiugsxb.cfd"
+        "server_name": "de1.sferavpn.pro",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "44f1c1e2f8b99e792ceed574627a1eb0"
       }
     },
     {
-      "type": "vless",
-      "tag": "\ud83c\uddeb\ud83c\uddee Finland, Helsinki | \ud83c\udf10 | [BL] #2",
-      "server": "fl.larpvpn.space",
-      "server_port": 7443,
-      "uuid": "9fd994ad-d36c-476d-96c7-25f10bbdf2cb",
-      "tls": {}
-    },
-    {
-      "type": "vless",
-      "tag": "\ud83c\udde9\ud83c\uddea Germany, Frankfurt am Main | [BL] #3",
-      "server": "94.26.0.107",
-      "server_port": 443,
-      "uuid": "1b5e85e9-fda3-4738-8ff1-1696b2bc994d",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": " By EbraSha \ud83d\uddff #1",
+      "server": "31.76.27.23",
+      "server_port": 37009,
+      "password": "Telegram@vpnjey",
       "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
         "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "Cve6RU_xmFPAsLiW2eIucli0lwEZyf7XFj6_rR8LukI",
-          "short_id": "671047edbaa38eef"
-        },
-        "server_name": "germany.whiteconnect.lol"
+        "server_name": "de.vpnjey.store"
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Telegram@vpnjey"
       }
     },
     {
-      "type": "vless",
-      "tag": "\ud83c\udde6\ud83c\uddf9 Austria, Vienna | [BL] #4",
-      "server": "150.241.72.148",
-      "server_port": 443,
-      "uuid": "0dc1fc26-b8e9-4296-9870-0996de3c2333",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": " By EbraSha \u2660\ufe0f #2",
+      "server": "77.110.96.201",
+      "server_port": 36264,
+      "password": "Telegram@vpnjey",
       "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
         "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "5iID-q-DSMMgT8cn3klfHimWR0TF6KP99GnDrDEcYS0"
-        },
-        "server_name": "at-1.kihsuyhf8jkiugsxb.cfd"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "\ud83c\udded\ud83c\uddf0 Hong Kong, Hong Kong | [BL] #5",
-      "server": "8.210.124.162",
-      "server_port": 443,
-      "uuid": "6f4d667f-c992-45c8-9114-cf3f2d722462",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "XtRoJGHudrJ4sMpzvzRPCvJCY60_IEINYB2osgN68AM",
-          "short_id": "b19a9e0bf0dc3bcc"
-        },
-        "server_name": "www.pixiv.co.jp"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "\ud83c\uddf3\ud83c\uddf4 Norway, Sandefjord | [BL] #6",
-      "server": "87.120.104.138",
-      "server_port": 443,
-      "uuid": "1b5e85e9-fda3-4738-8ff1-1696b2bc994d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "Cve6RU_xmFPAsLiW2eIucli0lwEZyf7XFj6_rR8LukI",
-          "short_id": "671047edbaa38eef"
-        },
-        "server_name": "norway.whiteconnect.lol"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #7",
-      "server": "195.63.142.152",
-      "server_port": 443,
-      "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "gtCZKjg0BtNaeAZKxXiEKnn5SqZyktjr-mBknr_2HW0",
-          "short_id": "fa3854d37455ace1"
-        },
-        "server_name": "www.booking.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "\ud83c\uddfa\ud83c\uddf8 United States, Buffalo | [BL] #8",
-      "server": "23.94.252.141",
-      "server_port": 443,
-      "uuid": "1b5e85e9-fda3-4738-8ff1-1696b2bc994d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "Cve6RU_xmFPAsLiW2eIucli0lwEZyf7XFj6_rR8LukI",
-          "short_id": "671047edbaa38eef"
-        },
-        "server_name": "usa.whiteconnect.lol"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "\ud83c\uddfa\ud83c\uddf8 United States, Los Angeles | [BL] #9",
-      "server": "2.27.160.58",
-      "server_port": 443,
-      "uuid": "1b5e85e9-fda3-4738-8ff1-1696b2bc994d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "Cve6RU_xmFPAsLiW2eIucli0lwEZyf7XFj6_rR8LukI",
-          "short_id": "671047edbaa38eef"
-        },
-        "server_name": "cdnv-img.perekrestok.ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "\ud83c\uddfa\ud83c\uddf8 United States, Los Angeles | [BL] #10",
-      "server": "192.220.11.234",
-      "server_port": 443,
-      "uuid": "b466eac6-b7c8-44ab-bbce-96a4768d5b56",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "android"
-        },
-        "enabled": true,
-        "server_name": "novixlink.706666.xyz"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "\ud83c\uddfa\ud83c\uddf8 United States, Los Angeles | [BL] #11",
-      "server": "216.167.94.71",
-      "server_port": 25711,
-      "uuid": "c45bc46e-d2e6-4049-b2d1-31b466d1629e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "nZTIbfG5GiuGVsNvTrsCAoNT9Fr198HmwMhzzca7Cws",
-          "short_id": "e1d048284849e63e"
-        },
-        "server_name": "www.intel.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "\ud83c\uddea\ud83c\uddea Estonia, Tallinn | [BL] #12",
-      "server": "86.110.38.108",
-      "server_port": 443,
-      "uuid": "1b5e85e9-fda3-4738-8ff1-1696b2bc994d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "Cve6RU_xmFPAsLiW2eIucli0lwEZyf7XFj6_rR8LukI",
-          "short_id": "671047edbaa38eef"
-        },
-        "server_name": "estonia.whiteconnect.lol"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83d\uddff #13",
-      "server": "77.110.123.230",
-      "server_port": 443,
-      "uuid": "0dc1fc26-b8e9-4296-9870-0996de3c2333",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "eauHVJZPiLyVugWyAVvZ_b70XryFqSN4K_ssIY7LojQ"
-        },
-        "server_name": "us-1.kihsuyhf8jkiugsxb.cfd"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83e\udd85 #14",
-      "server": "at-1.kihsuyhf8jkiugsxb.cfd",
-      "server_port": 443,
-      "uuid": "0dc1fc26-b8e9-4296-9870-0996de3c2333",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "5iID-q-DSMMgT8cn3klfHimWR0TF6KP99GnDrDEcYS0"
-        },
-        "server_name": "at-1.kihsuyhf8jkiugsxb.cfd"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83e\udd87 #15",
-      "server": "193.111.117.61",
-      "server_port": 443,
-      "uuid": "1b5e85e9-fda3-4738-8ff1-1696b2bc994d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "Cve6RU_xmFPAsLiW2eIucli0lwEZyf7XFj6_rR8LukI",
-          "short_id": "671047edbaa38eef"
-        },
-        "server_name": "poland.whiteconnect.lol"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83d\udd0b #16",
-      "server": "sv10.jarvesitw.ru",
-      "server_port": 443,
-      "uuid": "c6037cf7-d931-4027-af06-6bfb0f10684c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "vFnG0SzHIv43o3L8bw4reKp3EIFuSS-BCyBqbWUsYCo",
-          "short_id": "6591f200"
-        },
-        "server_name": "apiv10.jarvesitw.ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83d\udc8e #17",
-      "server": "93.152.220.216",
-      "server_port": 443,
-      "uuid": "1b5e85e9-fda3-4738-8ff1-1696b2bc994d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "Cve6RU_xmFPAsLiW2eIucli0lwEZyf7XFj6_rR8LukI",
-          "short_id": "671047edbaa38eef"
-        },
-        "server_name": "netherlands.whiteconnect.lol"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83e\uddf2 #18",
-      "server": "178.236.246.69",
-      "server_port": 443,
-      "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "G8SING6Ibc_igZ5vI5578fXCT_mBMRuq_o8_Ymnj2SQ",
-          "short_id": "eba1498e012ef580"
-        },
-        "server_name": "amazon.de"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83c\udf03 #19",
-      "server": "84.32.61.87",
-      "server_port": 443,
-      "uuid": "5d8cf280-e0f4-4539-b35c-7ff90659c0d0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "vFnG0SzHIv43o3L8bw4reKp3EIFuSS-BCyBqbWUsYCo",
-          "short_id": "6591f200"
-        },
-        "server_name": "apiv10.jarvesitw.ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": " By EbraSha \ud83c\udf9b\ufe0f #20",
-      "server": "144.31.53.52",
-      "server_port": 443,
-      "uuid": "0dc1fc26-b8e9-4296-9870-0996de3c2333",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "enabled": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "QWWpyBLxKBNBvBHMDDr-bt38fh_mD3xjMqlJ5jY-6hQ"
-        },
-        "server_name": "fi-8.kihsuyhf8jkiugsxb.cfd"
+        "server_name": "se.vpnjey2.dpdns.org",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Telegram@vpnjey"
       }
     }
   ],
