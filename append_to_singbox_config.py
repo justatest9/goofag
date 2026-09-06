@@ -85,6 +85,10 @@ cfg ='''
                 "outbound": "direct"
             },
             {
+                "domain": ["raw.githubusercontent.com"],
+                "outbound": "direct"
+            },
+            {
                 "domain_suffix" : [
                     "youtube.com",
                     "youtu.be",

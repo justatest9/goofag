@@ -18,7 +18,10 @@ def find_url_in_arr(url):
 def main():
     for line in sys.stdin:
         cline = line.strip()
-        url = yarl.URL(cline)
+        try:
+            url = yarl.URL(cline)
+        except:
+            continue
         if not find_url_in_arr(url):
             g_array.append((url, cline))
 
@@ -26,4 +29,5 @@ def main():
         print(i[1])
 
 if __name__ == "__main__":
+    print("Working on duplicates...", file=sys.stderr)
     main()

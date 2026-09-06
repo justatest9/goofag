@@ -41,7 +41,8 @@ def main():
 
     for i in range(len(outbounds)):
         outbounds[i]['tag'] += ' #' + str(i)
-        #outbounds[i]['connect_timeout'] = '3s'
+        #outbounds[i]['connect_timeout'] = '10s'
+
     # making config
     
     urltest_o = {}

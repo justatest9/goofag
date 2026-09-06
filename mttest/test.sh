@@ -18,10 +18,13 @@ sing-box run -c "$CFG_FILE" &
 SINGBOX_PID=$!
 sleep 1
 
+#echo "$FULL_INPUT" >$TMP/Debug_fullinput.txt
+
 pidar=()
 while read -r line; do
   RES=$(echo $line | python $PTH/../parset.py 0)
   if [ "$RES" = "{}" ]; then continue; fi
+  #echo "$ID $line" >>$TMP/Debug_line.txt
   echo $line | bash $PTH/thread.sh $ID &
   pidar+=($!)
   #echo $line $ID $RES
@@ -41,5 +44,5 @@ for res_file in $TMP/results_id*; do
   if [ "$speed" -gt 1 ]; then
     echo $speed $url
   fi
-  #rm $res_file
+  rm $res_file
 done
