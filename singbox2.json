@@ -45,7 +45,7 @@
       "type": "socks",
       "tag": "hideme",
       "server": "185.195.71.218",
-      "server_port": 32939
+      "server_port": 34535
     },
     {
       "type": "urltest",
@@ -53,9 +53,14 @@
       "outbounds": [
         " By EbraSha \ud83e\udd77 #0",
         " By EbraSha \ud83d\udcfc SKorea #1",
-        ".\ud81a\udd54 \u0741 \u02d6\u05b4\ud83d\udef8\u0f04\u02d6\u00b0. | [BL] #2",
-        "\ud83c\udde6\ud83c\uddf9 Austria, Vienna (Floridsdorf) | [BL] #3",
-        " By EbraSha \u2699\ufe0f #4"
+        "\ud83c\udde8\ud83c\udde6 Canada, Toronto | [BL] #2",
+        "\ud83c\uddef\ud83c\uddf5 Japan, Minoh (Saitoaokita) | \ud83c\udf10 | [BL] #3",
+        "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #4",
+        "\ud83c\udde8\ud83c\uddf4 Colombia, Cota | [BL] #5",
+        "\ud83c\uddeb\ud83c\uddee Finland, Helsinki | [BL] #6",
+        "\ud83c\uddee\ud83c\uddea Ireland, Saggart | [BL] #7",
+        " By EbraSha \ud83c\udf2a\ufe0f #8",
+        " By EbraSha \ud83d\udd79\ufe0f #9"
       ],
       "url": "https://api.telegram.org",
       "interval": "60m",
@@ -106,42 +111,49 @@
     },
     {
       "type": "vless",
-      "tag": ".\ud81a\udd54 \u0741 \u02d6\u05b4\ud83d\udef8\u0f04\u02d6\u00b0. | [BL] #2",
-      "server": "at3.moritech.net",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
+      "tag": "\ud83c\udde8\ud83c\udde6 Canada, Toronto | [BL] #2",
+      "server": "195.162.69.203",
+      "server_port": 8443,
+      "uuid": "953358cb-82ba-4296-960d-6d2ec3468f4c",
       "tls": {
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "android"
         },
         "enabled": true,
-        "server_name": "at3.moritech.net"
+        "server_name": "195-162-69-203.sslip.io"
       }
     },
     {
       "type": "vless",
-      "tag": "\ud83c\udde6\ud83c\uddf9 Austria, Vienna (Floridsdorf) | [BL] #3",
-      "server": "50.7.184.122",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "enabled": true,
-        "server_name": "at3.moritech.net"
-      }
+      "tag": "\ud83c\uddef\ud83c\uddf5 Japan, Minoh (Saitoaokita) | \ud83c\udf10 | [BL] #3",
+      "server": "152.69.195.67",
+      "server_port": 47878,
+      "uuid": "eb8613e3-8393-4cff-a3ad-6501fd4adc63",
+      "tls": {}
     },
     {
       "type": "vless",
-      "tag": " By EbraSha \u2699\ufe0f #4",
-      "server": "us.jcnas.vip",
-      "server_port": 20000,
-      "uuid": "cc0f49ba-9ec2-4411-8db2-d66d7023571d",
+      "tag": "\ud83c\uddf3\ud83c\uddf1 The Netherlands, Amsterdam | [BL] #4",
+      "server": "92.5.225.187",
+      "server_port": 62145,
+      "uuid": "8fb65472-5957-4f64-ba2d-b5812b2f155a",
+      "tls": {}
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\udde8\ud83c\uddf4 Colombia, Cota | [BL] #5",
+      "server": "149.130.188.248",
+      "server_port": 62145,
+      "uuid": "8fb65472-5957-4f64-ba2d-b5812b2f155a",
+      "tls": {}
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddeb\ud83c\uddee Finland, Helsinki | [BL] #6",
+      "server": "cdn7-02.cdn-vkvideo.com",
+      "server_port": 443,
+      "uuid": "0325e30e-7505-477e-aa32-7f73a3cc0153",
       "flow": "xtls-rprx-vision",
       "tls": {
         "utls": {
@@ -151,8 +163,65 @@
         "enabled": true,
         "reality": {
           "enabled": true,
-          "public_key": "Mlv-ZcsLcLeKpEu7f9ladiOBfOwWPgA6-XVQfpq0PXI",
-          "short_id": "f18eac58"
+          "public_key": "MpuwI3YH2g3YWHKLuQwwgD_qLo-UmUtZe8L1KXOKxhA",
+          "short_id": "b0d8f964b7ac8ac0"
+        },
+        "server_name": "cdn7-02.cdn-vkvideo.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddee\ud83c\uddea Ireland, Saggart | [BL] #7",
+      "server": "50.7.5.163",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "enabled": true,
+        "server_name": "ir-viper.failspace.top"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83c\udf2a\ufe0f #8",
+      "server": "163.128.99.165",
+      "server_port": 443,
+      "uuid": "66d0024b-307a-4714-86f7-07d141a244bf",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "l_AILVmgCSrYUlKhoiFc6NYY-zjXE6FTGEDaG1MECQY",
+          "short_id": "635295c55ea6eda1"
+        },
+        "server_name": "www.apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udd79\ufe0f #9",
+      "server": "13.212.155.195",
+      "server_port": 8686,
+      "uuid": "1a17b19d-4896-4531-af79-6e91d8ef8228",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw",
+          "short_id": "628b3c90c98ead4f"
         },
         "server_name": "www.apple.com"
       }
