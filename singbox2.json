@@ -52,8 +52,27 @@
       "tag": "autosel",
       "outbounds": [
         " By EbraSha \ud83e\udde8 #0",
-        " By EbraSha \ud83d\uddff #1",
-        " By EbraSha \u2660\ufe0f #2"
+        " By EbraSha \ud83e\uddf2 #1",
+        " By EbraSha \ud83e\udd88 #2",
+        " By EbraSha \ud83e\ude90 #3",
+        " By EbraSha \ud83d\udea8 #4",
+        " By EbraSha \ud83c\udf0c #5",
+        " By EbraSha \ud83c\udf2a\ufe0f #6",
+        " By EbraSha \ud83e\uddf2 #7",
+        " By EbraSha \ud83c\udf0c #8",
+        " By EbraSha \ud83e\udd88 #9",
+        " By EbraSha \ud83e\ude90 #10",
+        " By EbraSha \ud83e\uddf2 #11",
+        " By EbraSha \ud83d\udc09 #12",
+        " By EbraSha \ud83d\ude80 #13",
+        " By EbraSha \ud83d\udc8e #14",
+        " By EbraSha \ud83e\ude90 #15",
+        " By EbraSha \u2728 #16",
+        " By EbraSha \u2699\ufe0f #17",
+        " By EbraSha \ud83d\udd10 #18",
+        " By EbraSha \u2660\ufe0f #19",
+        " By EbraSha \ud83e\uddea #20",
+        " By EbraSha \ud83e\udde8 #21"
       ],
       "url": "https://api.telegram.org",
       "interval": "60m",
@@ -78,34 +97,413 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": " By EbraSha \ud83d\uddff #1",
-      "server": "31.76.27.23",
-      "server_port": 37009,
-      "password": "Telegram@vpnjey",
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\uddf2 #1",
+      "server": "3d71be18-tl4g00-twnp5a-ahsb.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d",
+      "flow": "",
       "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
         "enabled": true,
-        "server_name": "de.vpnjey.store"
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Telegram@vpnjey"
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4",
+          "short_id": ""
+        },
+        "server_name": "updates.cdn-apple.com"
       }
     },
     {
-      "type": "hysteria2",
-      "tag": " By EbraSha \u2660\ufe0f #2",
-      "server": "77.110.96.201",
-      "server_port": 36264,
-      "password": "Telegram@vpnjey",
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\udd88 #2",
+      "server": "0d0fc751-tl4g00-tm23vf-1jk6u.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "45bc25b2-1a10-11ed-91c0-f23c91cfbbc9",
       "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
         "enabled": true,
-        "server_name": "se.vpnjey2.dpdns.org",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Telegram@vpnjey"
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\ude90 #3",
+      "server": "6fa50db8-tl4g00-ts40sw-14g76.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "4729b4c8-1790-11eb-8684-f23c913c8d2b",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udea8 #4",
+      "server": "129.154.192.50",
+      "server_port": 2053,
+      "uuid": "48e84fcc-ecb1-48a3-a596-88fea84887f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "oBYxqt4GNTWrmvHRHM_6SAVj_yy95lXtQ0NLd1QWQDU",
+          "short_id": "dea6d68a3f6f96e3"
+        },
+        "server_name": "www.ibm.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83c\udf0c #5",
+      "server": "6ff2cd34-tl4g00-tr9h64-1f1f1.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "61c4be90-6235-11ec-a8bf-f23c91cfbbc9",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83c\udf2a\ufe0f #6",
+      "server": "c17a6c0c-tl4g00-tpaqgu-1smhu.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "62f2374c-891b-11ef-a3f6-f23c9164ca5d",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\uddf2 #7",
+      "server": "5fca3221-tl4g00-tpkh0c-1r7od.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "6d56436c-150d-11f0-b0c8-f23c913c8d2b",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83c\udf0c #8",
+      "server": "04a12bf4-tl4g00-ttxkqc-e06r.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "861726bb-c61a-b0e0-99fa-5ddfdcf21902",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\udd88 #9",
+      "server": "f070a8ea-tl4g00-u5ip77-duku.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9",
+      "flow": "",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4",
+          "short_id": ""
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\ude90 #10",
+      "server": "ed633af1-tl4g00-tqx9ef-1k0yf.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "9cc3c03e-21fd-11ee-a642-f23c91369f2d",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\uddf2 #11",
+      "server": "f19ad17e-tl4g00-u1dafb-1ro8s.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "a18ef18e-293a-11ef-b76e-f23c91cfbbc9",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udc09 #12",
+      "server": "ed49f9f4-tl4g00-tl54l3-luwe.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\ude80 #13",
+      "server": "1ba01fa4-tl4g00-tny186-4lg6.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "a4c9b7cc-a816-11ed-9f65-f23c9164ca5d",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udc8e #14",
+      "server": "8e799f0d-tl4g00-truoje-1uni.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "adbd0a82-3336-11ed-bd7c-f23c913c8d2b",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\ude90 #15",
+      "server": "6b6badbf-tl4g00-tu0ezx-1m7l4.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "bd515574-3b10-11ee-ac14-f23c9164ca5d",
+      "flow": "",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4",
+          "short_id": ""
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \u2728 #16",
+      "server": "564d4e56-tl4g00-tzh357-1tco3.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "e29de954-ea01-11ef-a271-f23c91cfbbc9",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \u2699\ufe0f #17",
+      "server": "beda7e37-tl4g00-tphxte-1h5u7.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "e3fdbd22-8c17-11ee-ace4-f23c913c8d2b",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83d\udd10 #18",
+      "server": "b83dbba5-tl4g00-txfm0f-1qxa1.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "f609abb4-ed17-11ee-9fa2-f23c9164ca5d",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \u2660\ufe0f #19",
+      "server": "555ceb14-tl4g00-tv7zgh-1ijh5.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "f7d95364-607b-11ee-93af-f23c91369f2d",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\uddea #20",
+      "server": "f46e6d70-tl4g00-u2e9xs-2b2n.hk3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "fcd39788-ca23-11ed-86e2-f23c913c8d2b",
+      "flow": "",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4",
+          "short_id": ""
+        },
+        "server_name": "updates.cdn-apple.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\udde8 #21",
+      "server": "3.36.132.218",
+      "server_port": 8686,
+      "uuid": "1a17b19d-4896-4531-af79-6e91d8ef8228",
+      "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw",
+          "short_id": "628b3c90c98ead4f"
+        },
+        "server_name": "www.apple.com"
       }
     }
   ],
