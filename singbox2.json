@@ -45,13 +45,13 @@
       "type": "socks",
       "tag": "hideme",
       "server": "185.195.71.218",
-      "server_port": 41165
+      "server_port": 44889
     },
     {
       "type": "urltest",
       "tag": "autosel",
       "outbounds": [
-        " By EbraSha \ud83e\udde8 #0",
+        " By EbraSha \ud83e\udd77 #0",
         " By EbraSha \ud83e\uddf2 #1",
         " By EbraSha \ud83e\udd88 #2",
         " By EbraSha \ud83e\ude90 #3",
@@ -81,19 +81,23 @@
       "interrupt_exist_connections": false
     },
     {
-      "type": "hysteria2",
-      "tag": " By EbraSha \ud83e\udde8 #0",
-      "server": "de1.sferavpn.pro",
-      "server_port": 443,
-      "password": "cd74c0a406664a5bc0bac098220a2468",
+      "type": "vless",
+      "tag": " By EbraSha \ud83e\udd77 #0",
+      "server": "185.79.138.71",
+      "server_port": 448,
+      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
       "tls": {
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
         "enabled": true,
-        "server_name": "de1.sferavpn.pro",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "44f1c1e2f8b99e792ceed574627a1eb0"
+        "reality": {
+          "enabled": true,
+          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+          "short_id": "cd21e552537c7c0b"
+        },
+        "server_name": "www.samsung.com"
       }
     },
     {
