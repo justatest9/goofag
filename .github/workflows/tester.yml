@@ -36,7 +36,7 @@ jobs:
           cp *.txt  exhaust
           cd exhaust
           git pull
-          git add .
+          git add tested_list.txt
           LAST_AUTHOR=$(git log -1 --format='%an')
           CMESSAGE="Periodically auto-update [skip ci]"
           if [ "$LAST_AUTHOR" == "Github Action Bot" ]; then
