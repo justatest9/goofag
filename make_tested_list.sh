@@ -2,6 +2,8 @@
 
 PTH=$(dirname $0)
 TMP=/tmp/singtest
+
+mkdir -p $TMP
 #export https_proxy="192.168.88.1:8080"
 
 (
