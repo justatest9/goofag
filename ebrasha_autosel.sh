@@ -5,7 +5,7 @@ TMP=/tmp/singtest
 
 mkdir -p $TMP
 
-TOTAL_CHUNKS=30
+TOTAL_CHUNKS=3
 CURPT=$(pwd)
 
 cd $TMP
