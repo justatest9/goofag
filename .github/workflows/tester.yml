@@ -1,4 +1,4 @@
-name: Sing-box config updater
+name: Proxy list tester
 env:
   TZ: Asia/Pyongyang
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -25,12 +25,8 @@ jobs:
       - name: Update File
         run: |
           bash singbox_install_latest.sh
-          # Пишем время и маты в файл
-          echo "Обновлено: $(date) - ебаная сука" > status.txt
-          # Сюда же добавим запуск твоего парсера, когда он будет готов
-          python getnfuckit.py
           
-          bash urlmob.sh
+          bash make_tested_list.sh
 
       - name: Git Push
         run: |
