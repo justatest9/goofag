@@ -1,1 +1,1 @@
-2026-09-07 23:00:49.430795 Updating to: {'id': 0, 'name': 'Switzerland', 'host': '185.195.71.218', 'port': 43875, 'image': '', 'ttl': 60}
+2026-09-08 19:00:47.723234 Updating to: {'id': 0, 'name': 'Switzerland', 'host': '185.195.71.218', 'port': 41971, 'image': '', 'ttl': 60}
