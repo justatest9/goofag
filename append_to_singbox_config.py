@@ -13,6 +13,10 @@ cfg ='''
             "external_controller": "127.0.0.1:9090"
         }
     },
+    "log": {
+        "level": "info",
+        "timestamp": true
+    },
     "dns": {
         "strategy": "ipv4_only",
         "servers": [
