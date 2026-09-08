@@ -45,7 +45,7 @@
       "type": "socks",
       "tag": "hideme",
       "server": "185.195.71.218",
-      "server_port": 41971
+      "server_port": 34493
     },
     {
       "type": "urltest",
