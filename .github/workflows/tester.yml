@@ -33,11 +33,14 @@ jobs:
           git config --global user.name "Github Action Bot"
           git config --global user.email "actions@github.com"
           cd exhaust
-          git config pull.rebase false
-          git stash
-          git pull
-          git stash pop
           git add tested_list.txt
+          git checkout -b tmp
+          git commit -m 1
+          git checkout exhaust
+          git fetch
+          git reset --hard origin/exhaust
+          git cherry-pick -n tmp
+
           LAST_AUTHOR=$(git log -1 --format='%an')
           CMESSAGE="Periodically auto-update [skip ci]"
           if [ "$LAST_AUTHOR" == "Github Action Bot" ]; then
