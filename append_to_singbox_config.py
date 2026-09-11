@@ -40,7 +40,7 @@ cfg ='''
         "tag": "tun-in",
         "mtu": 1280,
         "address": "172.19.0.1/30",
-        "stack": "gvisor",
+        "stack": "system",
         "auto_route": true,
         "strict_route": true,
         "route_exclude_address": [
